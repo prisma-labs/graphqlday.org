@@ -1,18 +1,16 @@
-const path = require("path");
+const withTm = require('@weco/next-plugin-transpile-modules')
+const withImages = require('next-images')
 
-module.exports = {
-  exportPathMap: () => ({
-    "/": { page: "/" },
-    "/code-of-conduct": { page: "/code-of-conduct" },
-    "/imprint": { page: "/imprint" },
-    "/team": { page: "/team" }
+// TODO: abstract next plugins to graphiconf
+module.exports = withImages(
+  withTm({
+    exportPathMap: () => ({
+      '/': { page: '/' },
+      '/code-of-conduct': { page: '/code-of-conduct' },
+      '/imprint': { page: '/imprint' },
+      '/team': { page: '/team' },
+    }),
+
+    transpileModules: ['graphiconf'],
   }),
-
-  // Custom Webpack config
-  webpack: (config, { dev }) => {
-    /* Enable only in Production */
-    if (!dev) {
-    }
-    return config;
-  }
-};
+)

@@ -2,9 +2,9 @@
   "name": "graphqlday.org",
   "version": "1.0.0",
   "scripts": {
-    "dev": "next",
+    "dev": "next -p 4066",
     "build": "next build && next export",
-    "start": "next start"
+    "start": "next start -p 4066"
   },
   "prettier": {
     "semi": false,
@@ -12,14 +12,20 @@
     "trailingComma": "all"
   },
   "dependencies": {
+    "graphiconf": "^1.0.1",
     "next": "^5.0.0",
     "polished": "^1.9.2",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-onclickout": "^2.0.8",
+    "react-scrollchor": "^4.2.1",
+    "react-tilt": "^0.1.4",
+    "react-youtube": "^7.5.0",
     "styled-components": "^3.1.6"
   },
   "devDependencies": {
+    "@weco/next-plugin-transpile-modules": "^0.0.2",
     "babel-eslint": "^8.2.1",
     "babel-plugin-module-resolver": "^3.1.0",
     "babel-plugin-polished": "^1.1.0",
@@ -28,6 +34,7 @@
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.6.1",
+    "next-images": "^0.9.1",
     "prettier": "^1.10.2"
   }
 }
