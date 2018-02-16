@@ -55,7 +55,7 @@ const team = [
     imageUrl: '/static/team/team-6',
     imageFormat: 'jpg',
     name: 'Mohammad Rajabifard',
-    bio: `Mohammad is a Software Developer, currently focused on open source work specially in Javascript. He's helping with styled-components project and he loves designing interfaces and experiences. He happily did this website w/ Next!`,
+    bio: `Mohammad is a Product Engineer, currently focused on open source work specially in Javascript. He's helping with some popular projects and he loves designing experiences. He happily did this website w/ Next!`,
     twitter: 'morajabi',
     github: 'morajabi',
   },
