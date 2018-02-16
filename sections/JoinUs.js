@@ -1,3 +1,4 @@
+import { Fragment } from 'react'
 import styled, { css } from 'styled-components'
 
 import rem from 'utils/rem'
@@ -7,50 +8,66 @@ import { navHeight, mobileNavHeight } from 'utils/sizes'
 import { mobile } from 'utils/media'
 import { eventbriteLink } from 'utils/config'
 import Navbar from 'components/Navbar'
-import Container from 'components/Container'
+import TwinsContainer from 'components/TwinsContainer'
 import SectionContent from 'components/SectionContent'
 import Button from 'components/Button'
-import FantasticImg from 'components/FantasticImg'
+import PinkImage from 'components/PinkImage'
 
 const JoinUsIntro = () => (
   <Wrapper>
-    <FantasticImgWrapper>
-      <FantasticImg />
-    </FantasticImgWrapper>
-
     <NavbarFloater>
       <Navbar />
     </NavbarFloater>
 
     <PopWrapper>
-      <Container>
-        <SectionContent>
-          <Title>Join us for GraphQL Day!</Title>
-          <Description>
-            GraphQL Day is a hands-on one day developer conference and workshop
-            for lovers of GraphQL. GraphQL Day is part of the GraphQL Europe
-            family, Europe’s only GraphQL conference, organized by Graph.Cool
-            and Honeypot.
-          </Description>
+      <TwinsContainer
+        fullWidthOnMobile={true}
+        startWidth={650}
+        renderStart={Content => (
+          <Content>
+            <ContentWrapper>
+              <SectionContent>
+                <Title>Join us for GraphQL Day!</Title>
+                <Description>
+                  GraphQL Day is a hands-on one day developer conference and
+                  workshop for lovers of GraphQL. GraphQL Day is part of the
+                  GraphQL Europe family, Europe’s only GraphQL conference,
+                  organized by Graph.Cool and Honeypot.
+                </Description>
 
-          <Meta>
-            <MetaItem>
-              <MetaItemKey>Date</MetaItemKey>
-              <MetaItemValue>14th April, 2018</MetaItemValue>
-            </MetaItem>
-            <MetaItem>
-              <MetaItemKey>Location</MetaItemKey>
-              <MetaItemValue>Nemo Science Museum, Amsterdam</MetaItemValue>
-            </MetaItem>
-          </Meta>
+                <Meta>
+                  <MetaItem>
+                    <MetaItemKey>Date</MetaItemKey>
+                    <MetaItemValue>14th April, 2018</MetaItemValue>
+                  </MetaItem>
+                  <MetaItem>
+                    <MetaItemKey>Location</MetaItemKey>
+                    <MetaItemValue>
+                      Nemo Science Museum, Amsterdam
+                    </MetaItemValue>
+                  </MetaItem>
+                </Meta>
 
-          <ButtonWrapper>
-            <Button isLink={true} href={eventbriteLink}>
-              Get Tickets
-            </Button>
-          </ButtonWrapper>
-        </SectionContent>
-      </Container>
+                <ButtonWrapper>
+                  <Button isLink={true} href={eventbriteLink}>
+                    Get Tickets
+                  </Button>
+                </ButtonWrapper>
+              </SectionContent>
+            </ContentWrapper>
+          </Content>
+        )}
+        renderEnd={Content => (
+          <Fragment>
+            <PinkImage.Bg />
+            <Content style={{ position: 'relative' }}>
+              <ImageWrapper>
+                <PinkImage.Image retina={false} src="/static/photo.png" />
+              </ImageWrapper>
+            </Content>
+          </Fragment>
+        )}
+      />
     </PopWrapper>
   </Wrapper>
 )
@@ -60,17 +77,26 @@ export default JoinUsIntro
 const Wrapper = styled.section`
   position: relative;
   overflow: hidden;
-  padding-top: ${rem(navHeight)};
+`
+
+const ContentWrapper = styled.div`
+  padding-top: ${rem(navHeight + 55)};
+  padding-bottom: 100px;
 
   ${mobile(css`
     padding-top: ${rem(mobileNavHeight)};
+    padding-bottom: 10px;
   `)};
 `
 
-const FantasticImgWrapper = styled.div`
-  position: absolute;
+const ImageWrapper = styled.div`
+  padding-top: 160px;
+  display: flex;
+  justify-content: center;
 
-  /* here */
+  ${mobile(css`
+    padding-top: 0;
+  `)};
 `
 
 const PopWrapper = styled.div`
