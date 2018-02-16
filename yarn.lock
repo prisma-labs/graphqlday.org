@@ -288,6 +288,10 @@ array-differ@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/array-differ/-/array-differ-1.0.0.tgz#eff52e3758249d33be402b8bb8e564bb2b5d4031"
 
+array-equal@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/array-equal/-/array-equal-1.0.0.tgz#8c2a5ef2472fd9ea742b04c77a75093ba2757c93"
+
 array-includes@^3.0.3:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/array-includes/-/array-includes-3.0.3.tgz#184b48f62d92d7452bb31b323165c7f8bd02266d"
@@ -2307,9 +2311,9 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.4:
   version "4.1.11"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.11.tgz#0e8bdfe4d1ddb8854d64e04ea7c00e2a026e5658"
 
-graphiconf@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/graphiconf/-/graphiconf-1.0.1.tgz#cbf9211b72d42deff3e036cf54e9af42ec01841a"
+graphiconf@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/graphiconf/-/graphiconf-1.1.1.tgz#2c32b711202a5aa622746b1ef2333eedc8e5b8df"
   dependencies:
     apollo-cache-inmemory "^1.1.9"
     apollo-client "^2.2.5"
@@ -2317,6 +2321,7 @@ graphiconf@^1.0.1:
     graphql "^0.13.1"
     graphql-tag "^2.7.3"
     graphql-tools "^2.21.0"
+    is-retina "^1.0.3"
     isomorphic-fetch "^2.2.1"
     lodash "^4.17.5"
     next "^5.0.0"
@@ -2326,6 +2331,7 @@ graphiconf@^1.0.1:
     react-apollo "^2.0.4"
     react-dom "^16.2.0"
     react-onclickout "^2.0.8"
+    react-retina-image "^2.0.5"
     react-scrollchor "^4.2.1"
     react-tilt "^0.1.4"
     react-youtube "^7.5.0"
@@ -2508,6 +2514,10 @@ iferr@^0.1.5:
 ignore@^3.3.3:
   version "3.3.7"
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-3.3.7.tgz#612289bfb3c220e186a58118618d5be8c1bab021"
+
+image-exists@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/image-exists/-/image-exists-1.1.0.tgz#ba49cccbaddca8cbbf10f89cafd4d1c8ecfd38d0"
 
 import-lazy@^2.1.0:
   version "2.1.0"
@@ -2715,6 +2725,10 @@ is-regex@^1.0.4:
 is-resolvable@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/is-resolvable/-/is-resolvable-1.1.0.tgz#fb18f87ce1feb925169c9a407c19318a3206ed88"
+
+is-retina@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/is-retina/-/is-retina-1.0.3.tgz#d7401b286bea2ae37f62477588de504d0b8647e3"
 
 is-retry-allowed@^1.0.0:
   version "1.1.0"
@@ -3612,7 +3626,7 @@ prop-types-exact@1.1.1:
     has "^1.0.1"
     object.assign "^4.0.4"
 
-prop-types@15.6.0, prop-types@^15.5.3, prop-types@^15.5.4, prop-types@^15.5.8, prop-types@^15.6.0:
+prop-types@15.6.0, prop-types@^15.5.3, prop-types@^15.5.4, prop-types@^15.5.6, prop-types@^15.5.8, prop-types@^15.6.0:
   version "15.6.0"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.0.tgz#ceaf083022fc46b4a35f69e13ef75aed0d639856"
   dependencies:
@@ -3751,6 +3765,16 @@ react-hot-loader@4.0.0-beta.18:
 react-onclickout@^2.0.8:
   version "2.0.8"
   resolved "https://registry.yarnpkg.com/react-onclickout/-/react-onclickout-2.0.8.tgz#d178b13fb87a481356761b454aa60df7069b2da4"
+
+react-retina-image@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/react-retina-image/-/react-retina-image-2.0.5.tgz#8f92efbbd454fa688d63f35e5a21eff1ab3a062f"
+  dependencies:
+    array-equal "^1.0.0"
+    image-exists "^1.1.0"
+    is-retina "^1.0.3"
+    object-assign "^4.1.0"
+    prop-types "^15.5.6"
 
 react-scrollchor@^4.2.1:
   version "4.2.1"
