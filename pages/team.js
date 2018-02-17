@@ -1,5 +1,4 @@
 import withData from 'utils/withData'
-import Navbar from 'components/Navbar'
 import Container from 'components/Container'
 import SectionContent from 'components/SectionContent'
 import Person from 'components/Person'
@@ -7,6 +6,7 @@ import Grid from 'components/Grid'
 import CoOrganizedBy from 'graphiconf/sections/CoOrganizedBy'
 
 import SeoTitle from '../components/SeoTitle'
+import Navbar from '../components/Navbar'
 import Footer from '../sections/Footer'
 
 const team = [
