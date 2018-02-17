@@ -1,4 +1,3 @@
-import Footer from 'graphiconf/sections/Footer'
 import Speakers from 'graphiconf/sections/Speakers'
 import CoOrganizedBy from 'graphiconf/sections/CoOrganizedBy'
 import FullImage from 'components/FullImage'
@@ -9,6 +8,7 @@ import JoinUs from '../sections/JoinUs'
 import Schedule from '../sections/Schedule'
 import GetYourTickets from '../sections/GetYourTickets'
 import Nemo from '../sections/Nemo'
+import Footer from '../sections/Footer'
 
 export default () => (
   <div>
