@@ -54,6 +54,10 @@ class GetYourTicket extends Component {
             </SwitchWrapper>
 
             <TicketsRow.Row>
+              {/*
+                  TODO:
+                  Change data based on the state change
+              */}
               <TicketsRow.Item>
                 <Ticket
                   omniStyle={true}
