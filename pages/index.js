@@ -4,9 +4,11 @@ import CoOrganizedBy from 'graphiconf/sections/CoOrganizedBy'
 import GetYourTicket from 'graphiconf/sections/GetYourTicket'
 import FullImage from 'components/FullImage'
 
+import { speakersList } from '../utils/data'
 import SeoTitle from '../components/SeoTitle'
 import JoinUs from '../sections/JoinUs'
-import { speakersList } from '../utils/data'
+import Schedule from '../sections/Schedule'
+import Nemo from '../sections/Nemo'
 
 export default () => (
   <div>
@@ -17,17 +19,14 @@ export default () => (
       heading="Meet our GraphQL expert speakers"
       speakersList={speakersList}
     />
+    <Schedule />
 
-    <FullImage src="/static/nemo-1.jpg" />
+    <div style={{ padding: '140px 0 70px 0' }}>
+      <FullImage src="/static/nemo-1.jpg" />
+    </div>
+
+    <Nemo />
     <GetYourTicket />
-
-    {/*
-        HERE!
-
-        I'm here
-
-        HERE!
-    */}
 
     <FullImage src="/static/nemo-3.jpg" />
 

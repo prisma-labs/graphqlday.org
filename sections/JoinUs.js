@@ -59,7 +59,7 @@ const JoinUsIntro = () => (
         )}
         renderEnd={Content => (
           <Fragment>
-            <PinkImage.Bg />
+            <PinkImage.Bg right={0} />
             <Content style={{ position: 'relative' }}>
               <ImageWrapper>
                 <PinkImage.Image retina={false} src="/static/photo.png" />
@@ -92,10 +92,11 @@ const ContentWrapper = styled.div`
 const ImageWrapper = styled.div`
   padding-top: 160px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 
   ${mobile(css`
     padding-top: 0;
+    justify-content: center;
   `)};
 `
 
