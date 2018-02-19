@@ -92,10 +92,11 @@ class GetYourTicket extends Component {
             </SwitchWrapper>
 
             <TicketsRow.Row>
-              {ticketData.map(ticket => {
+              {ticketData.map((ticket, i) => {
                 return (
                   <TicketsRow.Item>
                     <Ticket
+                      key={i}
                       omniStyle={true}
                       price={ticket.price}
                       name={ticket.name}
