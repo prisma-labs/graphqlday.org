@@ -1,1 +1,1 @@
-export const eventbriteLink = `https://get-my-fucking-tickets-while-organizers-forget-to-add-link.com`
+export const eventbriteLink = `https://www.eventbrite.com/e/graphql-day-tickets-43145801253`
