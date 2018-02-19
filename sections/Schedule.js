@@ -44,7 +44,7 @@ const scheduleList = [
     time: '10:00 - 10:30',
   },
   {
-    title: 'Coffe break',
+    title: 'Coffee break',
     description: '',
     images: [
       {
@@ -116,7 +116,7 @@ const scheduleList = [
     time: '13:15 - 13:30',
   },
   {
-    title: 'Coffe break',
+    title: 'Coffee break',
     description: '',
     images: [
       {

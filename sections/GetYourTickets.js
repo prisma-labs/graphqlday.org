@@ -61,7 +61,7 @@ class GetYourTicket extends Component {
               <TicketsRow.Item>
                 <Ticket
                   omniStyle={true}
-                  price="199€"
+                  price="59€"
                   name="Early Bird"
                   desc="Secure your spot now! Time is limited."
                   href={eventbriteLink}
@@ -71,7 +71,7 @@ class GetYourTicket extends Component {
                 <Ticket
                   omniStyle={true}
                   disabled={true}
-                  price="299€"
+                  price="69€"
                   name="Regular"
                   desc="Regular ticket price for the conferance"
                 />
@@ -80,7 +80,7 @@ class GetYourTicket extends Component {
                 <Ticket
                   omniStyle={true}
                   disabled={true}
-                  price="399€"
+                  price="79€"
                   name="Late Bird"
                   desc="Last chance to get tickets"
                 />
@@ -90,7 +90,7 @@ class GetYourTicket extends Component {
             <SideNote>
               Are you a student - or do you want to attend but just don’t have
               the means? We have set aside a number of tickets to include the
-              community. <a href="mailto:mo@there.pm">Write to us</a> and let us
+              community. <a href="mailto:support@graphql-europe.org">Write to us</a> and let us
               know why you should come.
             </SideNote>
           </SectionContent>

@@ -28,8 +28,8 @@ const Nemo = () => (
           <Texts>
             <SectionTitle>Nemo Schience Museum</SectionTitle>
             <Desc>
-              Right in the middle of NEMO there is an enormous auditorium.The
-              sloped seating gives your guests a perfect view of the impressive
+              Right in the middle of NEMO there is an enormous auditorium. The
+              sloped seating gives a perfect view of the impressive
               projection screen. It is a perfect location for conferences and
               conventions, at the very heart of technology, science and
               innovation.

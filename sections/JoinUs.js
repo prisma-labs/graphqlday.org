@@ -32,7 +32,7 @@ const JoinUsIntro = () => (
                   GraphQL Day is a hands-on one day developer conference and
                   workshop for lovers of GraphQL. GraphQL Day is part of the
                   GraphQL Europe family, Europe’s only GraphQL conference,
-                  organized by Graph.Cool and Honeypot.
+                  organized by Graphcool and Honeypot.
                 </Description>
 
                 <Meta>
@@ -43,7 +43,7 @@ const JoinUsIntro = () => (
                   <MetaItem>
                     <MetaItemKey>Location</MetaItemKey>
                     <MetaItemValue>
-                      Nemo Science Museum, Amsterdam
+                      NEMO Science Museum, Amsterdam
                     </MetaItemValue>
                   </MetaItem>
                 </Meta>
