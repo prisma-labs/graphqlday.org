@@ -15,20 +15,20 @@ const onlyTicketData = [
   {
     price: '59€',
     name: 'Early Bird',
-    desc: 'Until 7th of March',
-    disabled: false
+    desc: 'Sold out',
+    disabled: true,
   },
   {
     price: '69€',
     name: 'Regular',
     desc: 'Until 28th of March',
-    disabled: true
+    disabled: false,
   },
   {
     price: '89€',
     name: 'Late Bird',
     desc: 'Until the very last minute',
-    disabled: true
+    disabled: true,
   },
 ]
 
@@ -36,20 +36,20 @@ const withConfTicketData = [
   {
     price: '258€',
     name: 'Early Bird',
-    desc: 'Save €64,50',
-    disabled: false
+    desc: 'Not available',
+    disabled: true,
   },
   {
     price: '276',
     name: 'Early Bird',
     desc: 'Save €92',
-    disabled: true
+    disabled: false,
   },
   {
     price: '258€',
     name: 'Late Bird',
     desc: 'Save €122',
-    disabled: true
+    disabled: true,
   },
 ]
 
@@ -100,9 +100,8 @@ class GetYourTicket extends Component {
             <TicketsRow.Row>
               {ticketData.map((ticket, i) => {
                 return (
-                  <TicketsRow.Item>
+                  <TicketsRow.Item key={i}>
                     <Ticket
-                      key={i}
                       omniStyle={true}
                       price={ticket.price}
                       name={ticket.name}
