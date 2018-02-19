@@ -8,7 +8,17 @@ import Container from 'components/Container'
 
 const scheduleList = [
   {
-    title: 'Talk 1',
+    title: 'Registration',
+    description: 'Enjoy a hot coffe and some breakfast snacks',
+    images: [
+      {
+        src: ['/static/coffee.svg', '/static/coffee@2x.svg'],
+      },
+    ],
+    time: '08:30 - 09:30',
+  },
+  {
+    title: 'Introduction to urql - A new GraphQL client for React ',
     description: 'Ken Wheeler',
     images: [
       {
@@ -18,13 +28,115 @@ const scheduleList = [
         ],
       },
     ],
+    time: '09:30 - 10:00',
   },
   {
+    title: 'The GraphQL Ecosystem',
+    description: 'Kim Brandwijk',
     images: [
       {
-        src: '/static/coffee.svg',
+        src: [
+          '/static/speakers/speaker-2.jpg',
+          '/static/speakers/speaker-2@2x.jpg',
+        ],
       },
     ],
+    time: '10:00 - 10:30',
+  },
+  {
+    title: 'Coffe break',
+    description: '',
+    images: [
+      {
+        src: ['/static/coffee.svg', '/static/coffee@2x.svg'],
+      },
+    ],
+    time: '10:30 - 11:00',
+  },
+  {
+    title: 'State Management in React Apps with Apollo Client',
+    description: 'Sara Vieira',
+    images: [
+      {
+        src: [
+          '/static/speakers/speaker-3.jpg',
+          '/static/speakers/speaker-3@2x.jpg',
+        ],
+      },
+    ],
+    time: '11:00 - 11:30',
+  },
+  {
+    title: 'Building a GraphQL API Over Your Existing Backends',
+    description: 'Martijn Walraven',
+    images: [
+      {
+        src: [
+          '/static/speakers/speaker-4.jpg',
+          '/static/speakers/speaker-4@2x.jpg',
+        ],
+      },
+    ],
+    time: '11:30 - 12:00',
+  },
+  {
+    title: 'Lunch',
+    description: '',
+    images: [
+      {
+        src: ['/static/cutlery.svg', '/static/cutlery@2x.svg'],
+      },
+    ],
+    time: '12:00 - 13:00',
+  },
+  {
+    title: 'Lightning Talk',
+    description: 'Manjula Dube',
+    images: [
+      {
+        src: [
+          '/static/speakers/speaker-5.jpg',
+          '/static/speakers/speaker-5@2x.jpg',
+        ],
+      },
+    ],
+    time: '13:00 - 13:15',
+  },
+  {
+    title: 'Lightning Talk',
+    description: 'Ivan Goncharov',
+    images: [
+      {
+        src: [
+          '/static/speakers/speaker-6.jpg',
+          '/static/speakers/speaker-6@2x.jpg',
+        ],
+      },
+    ],
+    time: '13:15 - 13:30',
+  },
+  {
+    title: 'Coffe break',
+    description: '',
+    images: [
+      {
+        src: ['/static/coffee.svg', '/static/coffee@2x.svg'],
+      },
+    ],
+    time: '13:30 - 14:00',
+  },
+  {
+    title: 'Workshop: Fullstack GraphQL',
+    description: 'Nikolas Burk & Speakers',
+    images: [
+      {
+        src: [
+          '/static/speakers/speaker-7.jpg',
+          '/static/speakers/speaker-7@2x.jpg',
+        ],
+      },
+    ],
+    time: '14:00 - 17:00',
   },
 ]
 
@@ -37,7 +149,6 @@ export default () => (
   <Wrapper>
     <Container>
       <SectionTitle>Schedule</SectionTitle>
-
       <ColumnsWrapper>
         <Column>
           {firstColumn.map((row, i) => <ScheduleRow key={i} {...row} />)}
