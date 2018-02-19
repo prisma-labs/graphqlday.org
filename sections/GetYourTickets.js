@@ -15,14 +15,14 @@ const onlyTicketData = [
   {
     price: '59€',
     name: 'Early Bird',
-    desc: 'Sold out',
-    disabled: true,
+    desc: 'Until 7th of March',
+    disabled: false,
   },
   {
     price: '69€',
     name: 'Regular',
     desc: 'Until 28th of March',
-    disabled: false,
+    disabled: true,
   },
   {
     price: '89€',
@@ -34,21 +34,21 @@ const onlyTicketData = [
 
 const withConfTicketData = [
   {
-    price: '258€',
+    price: '330€',
     name: 'Early Bird',
-    desc: 'Not available',
-    disabled: true,
-  },
-  {
-    price: '276€',
-    name: 'Early Bird',
-    desc: 'Save €92',
+    desc: 'Sold out!',
     disabled: false,
   },
   {
-    price: '258€',
+    price: '335€',
+    name: 'Normal',
+    desc: 'Save €33',
+    disabled: true,
+  },
+  {
+    price: '345€',
     name: 'Late Bird',
-    desc: 'Save €122',
+    desc: 'Save €43',
     disabled: true,
   },
 ]
@@ -90,7 +90,7 @@ class GetYourTicket extends Component {
                   },
                   {
                     value: 'with-conf',
-                    label: 'GraphQL Day + The Conference',
+                    label: 'GraphQL Day + GraphQL Europe',
                     wrapperProps: { style: { maxWidth: 180 } },
                   },
                 ]}

@@ -9,10 +9,11 @@ import Container from 'components/Container'
 const scheduleList = [
   {
     title: 'Registration',
-    description: 'Enjoy a hot coffe and some breakfast snacks',
+    description: 'Enjoy a hot coffee and some breakfast snacks',
+    icon: true,
     images: [
       {
-        src: ['/static/coffee.svg', '/static/coffee@2x.svg'],
+        src: '/static/coffee.svg',
       },
     ],
     time: '08:30 - 09:30',
@@ -46,9 +47,10 @@ const scheduleList = [
   {
     title: 'Coffee break',
     description: '',
+    icon: true,
     images: [
       {
-        src: ['/static/coffee.svg', '/static/coffee@2x.svg'],
+        src: '/static/coffee.svg',
       },
     ],
     time: '10:30 - 11:00',
@@ -82,9 +84,10 @@ const scheduleList = [
   {
     title: 'Lunch',
     description: '',
+    icon: true,
     images: [
       {
-        src: ['/static/cutlery.svg', '/static/cutlery@2x.svg'],
+        src: '/static/cutlery.svg',
       },
     ],
     time: '12:00 - 13:00',
@@ -118,9 +121,10 @@ const scheduleList = [
   {
     title: 'Coffee break',
     description: '',
+    icon: true,
     images: [
       {
-        src: ['/static/coffee.svg', '/static/coffee@2x.svg'],
+        src: '/static/coffee.svg',
       },
     ],
     time: '13:30 - 14:00',
