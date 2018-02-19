@@ -16,16 +16,19 @@ const onlyTicketData = [
     price: '59€',
     name: 'Early Bird',
     desc: 'Until 7th of March',
+    disabled: false
   },
   {
     price: '69€',
     name: 'Regular',
     desc: 'Until 28th of March',
+    disabled: true
   },
   {
-    price: '79€',
+    price: '89€',
     name: 'Late Bird',
     desc: 'Until the very last minute',
+    disabled: true
   },
 ]
 
@@ -34,16 +37,19 @@ const withConfTicketData = [
     price: '258€',
     name: 'Early Bird',
     desc: 'Save €64,50',
+    disabled: false
   },
   {
     price: '276',
     name: 'Early Bird',
     desc: 'Save €92',
+    disabled: true
   },
   {
     price: '258€',
     name: 'Late Bird',
     desc: 'Save €122',
+    disabled: true
   },
 ]
 
@@ -102,6 +108,7 @@ class GetYourTicket extends Component {
                       name={ticket.name}
                       desc={ticket.desc}
                       href={eventbriteLink}
+                      disabled={ticket.disabled}
                     />
                   </TicketsRow.Item>
                 )
