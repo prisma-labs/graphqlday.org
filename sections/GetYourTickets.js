@@ -40,7 +40,7 @@ const withConfTicketData = [
     disabled: true,
   },
   {
-    price: '276',
+    price: '276€',
     name: 'Early Bird',
     desc: 'Save €92',
     disabled: false,
