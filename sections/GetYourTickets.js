@@ -11,12 +11,50 @@ import Ticket from 'components/Ticket'
 import TicketsRow from 'components/TicketsRow'
 import BigSwitch from 'components/BigSwitch'
 
+const onlyTicketData = [
+  {
+    price: '59€',
+    name: 'Early Bird',
+    desc: 'Until 7th of March',
+  },
+  {
+    price: '69€',
+    name: 'Regular',
+    desc: 'Until 28th of March',
+  },
+  {
+    price: '79€',
+    name: 'Late Bird',
+    desc: 'Until the very last minute',
+  },
+]
+
+const withConfTicketData = [
+  {
+    price: '258€',
+    name: 'Early Bird',
+    desc: 'Save €64,50',
+  },
+  {
+    price: '276',
+    name: 'Early Bird',
+    desc: 'Save €92',
+  },
+  {
+    price: '258€',
+    name: 'Late Bird',
+    desc: 'Save €122',
+  },
+]
+
 class GetYourTicket extends Component {
   state = {
     selectedOption: 'only',
   }
 
   render() {
+    const ticketData =
+      this.state.selectedOption === 'only' ? onlyTicketData : withConfTicketData
     return (
       <Wrapper id="get-your-ticket">
         <Container>
@@ -54,44 +92,27 @@ class GetYourTicket extends Component {
             </SwitchWrapper>
 
             <TicketsRow.Row>
-              {/*
-                  TODO:
-                  Change data based on the state change
-              */}
-              <TicketsRow.Item>
-                <Ticket
-                  omniStyle={true}
-                  price="59€"
-                  name="Early Bird"
-                  desc="Secure your spot now! Time is limited."
-                  href={eventbriteLink}
-                />
-              </TicketsRow.Item>
-              <TicketsRow.Item>
-                <Ticket
-                  omniStyle={true}
-                  disabled={true}
-                  price="69€"
-                  name="Regular"
-                  desc="Regular ticket price for the conferance"
-                />
-              </TicketsRow.Item>
-              <TicketsRow.Item>
-                <Ticket
-                  omniStyle={true}
-                  disabled={true}
-                  price="79€"
-                  name="Late Bird"
-                  desc="Last chance to get tickets"
-                />
-              </TicketsRow.Item>
+              {ticketData.map(ticket => {
+                return (
+                  <TicketsRow.Item>
+                    <Ticket
+                      omniStyle={true}
+                      price={ticket.price}
+                      name={ticket.name}
+                      desc={ticket.desc}
+                      href={eventbriteLink}
+                    />
+                  </TicketsRow.Item>
+                )
+              })}
             </TicketsRow.Row>
 
             <SideNote>
               Are you a student - or do you want to attend but just don’t have
               the means? We have set aside a number of tickets to include the
-              community. <a href="mailto:support@graphql-europe.org">Write to us</a> and let us
-              know why you should come.
+              community.{' '}
+              <a href="mailto:support@graphql-europe.org">Write to us</a> and
+              let us know why you should come.
             </SideNote>
           </SectionContent>
         </Container>
