@@ -179,6 +179,7 @@ const ColumnsWrapper = styled.div`
 `
 
 const Column = styled.div`
+  width: 50%;
   flex: 1 1 auto;
   margin-right: 130px;
 
