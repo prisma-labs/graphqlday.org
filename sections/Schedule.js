@@ -130,8 +130,8 @@ const scheduleList = [
     time: '13:30 - 14:00',
   },
   {
-    title: 'Workshop: Fullstack GraphQL',
-    description: 'Nikolas Burk & Speakers',
+    title: '[Workshop] Building GraphQL servers with Node.js',
+    description: 'Nikolas Burk',
     images: [
       {
         src: [
