@@ -130,7 +130,7 @@ const scheduleList = [
     time: '13:30 - 14:00',
   },
   {
-    title: '[Workshop] Building GraphQL servers with Node.js',
+    title: 'Building GraphQL servers with Node.js (Workshop)',
     description: 'Nikolas Burk',
     images: [
       {
