@@ -37,7 +37,7 @@ const onlyTicketData = [
 
 const withConfTicketData = [
   {
-    price: '258€',
+    price: '330€',
     name: 'Early Bird',
     desc: 'Save €64,50',
     disabled: false,
@@ -51,7 +51,7 @@ const withConfTicketData = [
     href: eventbriteLinkWithCombi,
   },
   {
-    price: '258€',
+    price: '345€',
     name: 'Late Bird',
     desc: 'Save €122',
     disabled: true,
@@ -96,7 +96,7 @@ class GetYourTicket extends Component {
                   },
                   {
                     value: 'with-conf',
-                    label: 'GraphQL Day + The Conference',
+                    label: 'GraphQL Day + GraphQL Europe',
                     wrapperProps: { style: { maxWidth: 180 } },
                   },
                 ]}
