@@ -87,12 +87,8 @@ export default class MyDocument extends Document {
 
           <link rel="canonical" href="https://graphql-europe.org" /> */}
 
-          <script src="https://use.typekit.net/fkv8pfd.js" />
-          <script
-            dangerouslySetInnerHTML={{
-              __html: 'try{Typekit.load({ async: true });}catch(e){}',
-            }}
-          />
+          <link rel="stylesheet" href="https://use.typekit.net/sez2ksz.css" />
+
           {this.props.styleTags}
         </Head>
         <body>
