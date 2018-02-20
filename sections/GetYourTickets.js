@@ -1,7 +1,7 @@
 import { Component } from 'react'
 import styled from 'styled-components'
 
-import { eventbriteLink } from '../utils/config'
+import { eventbriteLink, eventbriteLinkWithCombi } from '../utils/config'
 import { muteText } from 'utils/colors'
 import Container from 'components/Container'
 import SectionTitle from 'components/SectionTitle'
@@ -16,19 +16,22 @@ const onlyTicketData = [
     price: '59€',
     name: 'Early Bird',
     desc: 'Until 7th of March',
-    disabled: false
+    disabled: false,
+    href: eventbriteLink,
   },
   {
     price: '69€',
     name: 'Regular',
-    desc: 'Until 28th of March',
-    disabled: true
+    desc: 'Until 8th of April',
+    disabled: true,
+    href: eventbriteLink,
   },
   {
     price: '89€',
     name: 'Late Bird',
     desc: 'Until the very last minute',
-    disabled: true
+    disabled: true,
+    href: eventbriteLink,
   },
 ]
 
@@ -37,19 +40,22 @@ const withConfTicketData = [
     price: '258€',
     name: 'Early Bird',
     desc: 'Save €64,50',
-    disabled: false
+    disabled: false,
+    href: eventbriteLinkWithCombi,
   },
   {
     price: '276',
     name: 'Early Bird',
     desc: 'Save €92',
-    disabled: true
+    disabled: true,
+    href: eventbriteLinkWithCombi,
   },
   {
     price: '258€',
     name: 'Late Bird',
     desc: 'Save €122',
-    disabled: true
+    disabled: true,
+    href: eventbriteLinkWithCombi,
   },
 ]
 
@@ -100,14 +106,13 @@ class GetYourTicket extends Component {
             <TicketsRow.Row>
               {ticketData.map((ticket, i) => {
                 return (
-                  <TicketsRow.Item>
+                  <TicketsRow.Item key={i}>
                     <Ticket
-                      key={i}
                       omniStyle={true}
                       price={ticket.price}
                       name={ticket.name}
                       desc={ticket.desc}
-                      href={eventbriteLink}
+                      href={ticket.href}
                       disabled={ticket.disabled}
                     />
                   </TicketsRow.Item>
