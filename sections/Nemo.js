@@ -26,7 +26,7 @@ const Nemo = () => (
       renderEnd={Content => (
         <Content>
           <Texts>
-            <SectionTitle>Nemo Schience Museum</SectionTitle>
+            <SectionTitle>NEMO Science Museum</SectionTitle>
             <Desc>
               Right in the middle of NEMO there is an enormous auditorium. The
               sloped seating gives a perfect view of the impressive

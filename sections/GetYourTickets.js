@@ -1,7 +1,7 @@
 import { Component } from 'react'
 import styled from 'styled-components'
 
-import { eventbriteLink } from '../utils/config'
+import { eventbriteLink, eventbriteLinkWithCombi } from '../utils/config'
 import { muteText } from 'utils/colors'
 import Container from 'components/Container'
 import SectionTitle from 'components/SectionTitle'
@@ -17,18 +17,21 @@ const onlyTicketData = [
     name: 'Early Bird',
     desc: 'Until 7th of March',
     disabled: false,
+    href: eventbriteLink,
   },
   {
     price: '69€',
     name: 'Regular',
-    desc: 'Until 28th of March',
+    desc: 'Until 8th of April',
     disabled: true,
+    href: eventbriteLink,
   },
   {
     price: '89€',
     name: 'Late Bird',
     desc: 'Until the very last minute',
     disabled: true,
+    href: eventbriteLink,
   },
 ]
 
@@ -36,20 +39,23 @@ const withConfTicketData = [
   {
     price: '330€',
     name: 'Early Bird',
-    desc: 'Save €28',
-    disabled: true,
+    desc: 'Until 7th of March',
+    disabled: false,
+    href: eventbriteLinkWithCombi,
   },
   {
     price: '335€',
     name: 'Regular',
-    desc: 'Save €33',
-    disabled: false,
+    desc: 'Until 8th of April',
+    disabled: true,
+    href: eventbriteLinkWithCombi,
   },
   {
     price: '345€',
     name: 'Late Bird',
-    desc: 'Save €43',
+    desc: 'Until the very last minute',
     disabled: true,
+    href: eventbriteLinkWithCombi,
   },
 ]
 
@@ -106,7 +112,7 @@ class GetYourTicket extends Component {
                       price={ticket.price}
                       name={ticket.name}
                       desc={ticket.desc}
-                      href={eventbriteLink}
+                      href={ticket.href}
                       disabled={ticket.disabled}
                     />
                   </TicketsRow.Item>
