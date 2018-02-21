@@ -12,7 +12,7 @@
     "trailingComma": "all"
   },
   "dependencies": {
-    "graphiconf": "^2.0.3",
+    "graphiconf": "2.0.4",
     "next": "^5.0.0",
     "polished": "^1.9.2",
     "prop-types": "^15.6.0",
