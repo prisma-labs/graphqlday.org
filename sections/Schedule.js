@@ -189,7 +189,8 @@ const Column = styled.div`
 
   ${mobile(css`
     margin-right: 0;
-    margin-bottom: 25px;
+    margin-bottom: 45px;
+    width: auto;
 
     &:last-child {
       margin-bottom: 0;
