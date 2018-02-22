@@ -10,10 +10,10 @@ const scheduleList = [
   {
     title: 'Registration',
     description: 'Enjoy a hot coffee and some breakfast snacks',
-    icon: true,
     images: [
       {
         src: '/static/coffee.svg',
+        icon: true,
       },
     ],
     time: '08:30 - 09:30',
@@ -47,10 +47,10 @@ const scheduleList = [
   {
     title: 'Coffee break',
     description: '',
-    icon: true,
     images: [
       {
         src: '/static/coffee.svg',
+        icon: true,
       },
     ],
     time: '10:30 - 11:00',
@@ -84,10 +84,10 @@ const scheduleList = [
   {
     title: 'Lunch',
     description: '',
-    icon: true,
     images: [
       {
         src: '/static/cutlery.svg',
+        icon: true,
       },
     ],
     time: '12:00 - 13:00',
@@ -134,10 +134,10 @@ const scheduleList = [
   {
     title: 'Coffee break',
     description: '',
-    icon: true,
     images: [
       {
         src: '/static/coffee.svg',
+        icon: true,
       },
     ],
     time: '13:45 - 14:00',
@@ -202,7 +202,8 @@ const Column = styled.div`
 
   ${mobile(css`
     margin-right: 0;
-    margin-bottom: 25px;
+    margin-bottom: 45px;
+    width: auto;
 
     &:last-child {
       margin-bottom: 0;
