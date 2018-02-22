@@ -119,6 +119,19 @@ const scheduleList = [
     time: '13:15 - 13:30',
   },
   {
+    title: 'Lightning Talk',
+    description: 'Ruben Verborgh',
+    images: [
+      {
+        src: [
+          '/static/speakers/speaker-8.jpg',
+          '/static/speakers/speaker-8@2x.jpg',
+        ],
+      },
+    ],
+    time: '13:15 - 13:30',
+  },
+  {
     title: 'Coffee break',
     description: '',
     icon: true,
@@ -127,7 +140,7 @@ const scheduleList = [
         src: '/static/coffee.svg',
       },
     ],
-    time: '13:30 - 14:00',
+    time: '13:45 - 14:00',
   },
   {
     title: 'Building GraphQL servers with Node.js (Workshop)',
