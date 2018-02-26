@@ -1,3 +1,5 @@
+import SpeakerStamp from '../components/SpeakerStamp'
+
 // Ken Wheeler - Director of OSS at FormidableLabs - https://twitter.com/ken_wheeler / https://github.com/kenwheeler
 // Kim Brandwijk - Author of SupergraphQL - https://github.com/kbrandwijk
 // Sara Vieira - Frontend Engineer at YLD.io - https://twitter.com/NikkitaFTW / https://github.com/SaraVieira
@@ -13,6 +15,7 @@ export const speakersList = [
     bio: 'Director of OSS at FormidableLabs',
     twitter: 'ken_wheeler',
     github: 'kenwheeler',
+    renderStamp: () => <SpeakerStamp src="/static/speaks-at-ra.png" />,
   },
   {
     imageUrl: '/static/speakers/speaker-2',
@@ -45,6 +48,7 @@ export const speakersList = [
     bio: 'Senior Engineer at Bookmyshow',
     twitter: 'manjula_dube',
     github: 'manjula91',
+    renderStamp: () => <SpeakerStamp src="/static/speaks-at-ra-white.png" />,
   },
   {
     imageUrl: '/static/speakers/speaker-6',

@@ -9,6 +9,7 @@ import Schedule from '../sections/Schedule'
 import GetYourTickets from '../sections/GetYourTickets'
 import Nemo from '../sections/Nemo'
 import Footer from '../sections/Footer'
+import Partners from '../sections/Partners'
 
 export default () => (
   <div>
@@ -30,7 +31,8 @@ export default () => (
 
     <FullImage src="/static/nemo-3.jpg" />
 
-    <div style={{ padding: '115px 0 30px 0' }}>
+    <div style={{ padding: '80px 0 30px 0' }}>
+      <Partners />
       <CoOrganizedBy />
     </div>
 
