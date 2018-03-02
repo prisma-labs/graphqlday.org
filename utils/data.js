@@ -18,6 +18,14 @@ export const speakersList = [
     renderStamp: () => <SpeakerStamp src="/static/speaks-at-ra.png" />,
   },
   {
+    imageUrl: '/static/speakers/speaker-9',
+    imageFormat: 'jpg',
+    name: 'Johannes Schickling',
+    bio: 'Founder & CEO at Graphcool',
+    twitter: '_schickling',
+    github: 'schickling',
+  },
+  {
     imageUrl: '/static/speakers/speaker-2',
     imageFormat: 'jpg',
     name: 'Kim Brandwijk',

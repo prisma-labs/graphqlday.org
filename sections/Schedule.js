@@ -94,29 +94,16 @@ const scheduleList = [
   },
   {
     title: 'Lightning Talk',
-    description: 'Manjula Dube',
+    description: 'Johannes Schickling',
     images: [
       {
         src: [
-          '/static/speakers/speaker-5.jpg',
-          '/static/speakers/speaker-5@2x.jpg',
+          '/static/speakers/speaker-9.jpg',
+          '/static/speakers/speaker-9@2x.jpg',
         ],
       },
     ],
     time: '13:00 - 13:15',
-  },
-  {
-    title: 'Lightning Talk',
-    description: 'Ivan Goncharov',
-    images: [
-      {
-        src: [
-          '/static/speakers/speaker-6.jpg',
-          '/static/speakers/speaker-6@2x.jpg',
-        ],
-      },
-    ],
-    time: '13:15 - 13:30',
   },
   {
     title: 'Lightning Talk',
@@ -130,6 +117,32 @@ const scheduleList = [
       },
     ],
     time: '13:15 - 13:30',
+  },
+  {
+    title: 'Lightning Talk',
+    description: 'Ivan Goncharov',
+    images: [
+      {
+        src: [
+          '/static/speakers/speaker-6.jpg',
+          '/static/speakers/speaker-6@2x.jpg',
+        ],
+      },
+    ],
+    time: '13:30 - 13:45',
+  },
+  {
+    title: 'Lightning Talk',
+    description: 'Manjula Dube',
+    images: [
+      {
+        src: [
+          '/static/speakers/speaker-5.jpg',
+          '/static/speakers/speaker-5@2x.jpg',
+        ],
+      },
+    ],
+    time: '13:45 - 14:00',
   },
   {
     title: 'Coffee break',
