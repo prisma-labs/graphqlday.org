@@ -48,7 +48,7 @@ export const speakersList = [
     bio: 'Senior Engineer at Bookmyshow',
     twitter: 'manjula_dube',
     github: 'manjula91',
-    renderStamp: () => <SpeakerStamp src="/static/speaks-at-ra-white.png" />,
+    renderStamp: () => <SpeakerStamp src="/static/speaks-at-ra-white-bg.png" />,
   },
   {
     imageUrl: '/static/speakers/speaker-6',
