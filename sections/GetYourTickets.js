@@ -1,8 +1,10 @@
 import { Component } from 'react'
+import { Subscribe } from 'unstated'
 import styled from 'styled-components'
 
 import { eventbriteLink, eventbriteLinkWithCombi } from '../utils/config'
 import { muteText } from 'utils/colors'
+import ModalContainer from '../containers/ModalContainer'
 import Container from 'components/Container'
 import SectionTitle from 'components/SectionTitle'
 import SectionContent from 'components/SectionContent'
@@ -103,22 +105,27 @@ class GetYourTicket extends Component {
               />
             </SwitchWrapper>
 
-            <TicketsRow.Row>
-              {ticketData.map((ticket, i) => {
-                return (
-                  <TicketsRow.Item key={i}>
-                    <Ticket
-                      omniStyle={true}
-                      price={ticket.price}
-                      name={ticket.name}
-                      desc={ticket.desc}
-                      href={ticket.href}
-                      disabled={ticket.disabled}
-                    />
-                  </TicketsRow.Item>
-                )
-              })}
-            </TicketsRow.Row>
+            <Subscribe to={[ModalContainer]}>
+              {modal => (
+                <TicketsRow.Row>
+                  {ticketData.map((ticket, i) => {
+                    return (
+                      <TicketsRow.Item key={i}>
+                        <Ticket
+                          omniStyle={true}
+                          price={ticket.price}
+                          name={ticket.name}
+                          desc={ticket.desc}
+                          href="#get-your-ticket"
+                          onSelect={() => ticket.disabled || modal.show()}
+                          disabled={ticket.disabled}
+                        />
+                      </TicketsRow.Item>
+                    )
+                  })}
+                </TicketsRow.Row>
+              )}
+            </Subscribe>
 
             <SideNote>
               Are you a student - or do you want to attend but just don’t have

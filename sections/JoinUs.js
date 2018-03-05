@@ -1,5 +1,6 @@
 import { Fragment } from 'react'
 import styled, { css } from 'styled-components'
+import { Subscribe } from 'unstated'
 
 import rem from 'utils/rem'
 import { textGrey } from 'utils/colors'
@@ -12,6 +13,7 @@ import TwinsContainer from 'components/TwinsContainer'
 import SectionContent from 'components/SectionContent'
 import Button from 'components/Button'
 import PinkImage from 'components/PinkImage'
+import ModalContainer from '../containers/ModalContainer'
 
 const JoinUsIntro = () => (
   <Wrapper>
@@ -48,11 +50,13 @@ const JoinUsIntro = () => (
                   </MetaItem>
                 </Meta>
 
-                <ButtonWrapper>
-                  <Button isLink={true} href={eventbriteLink}>
-                    Get Tickets
-                  </Button>
-                </ButtonWrapper>
+                <Subscribe to={[ModalContainer]}>
+                  {modal => (
+                    <ButtonWrapper>
+                      <Button onClick={modal.show}>Get Tickets</Button>
+                    </ButtonWrapper>
+                  )}
+                </Subscribe>
               </SectionContent>
             </ContentWrapper>
           </Content>
