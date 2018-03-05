@@ -29,7 +29,7 @@ export default class SubscribeModal extends React.Component {
                 </Close>
 
                 <Title>
-                  Subscribe To Get Notified When Tickets Are Available
+                  Get Notified When Tickets Are Available
                 </Title>
                 <Subtitle>
                   We will only email you once the tickets are out, no spam.
