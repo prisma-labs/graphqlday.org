@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Subscribe } from 'unstated'
-import { request } from 'graphql-request'
+import { GraphQLClient } from 'graphql-request'
 
 import Button from 'components/Button'
 import ModalContainer from '../containers/ModalContainer'
@@ -67,7 +67,12 @@ export default class SubscribeModal extends React.Component {
                       }
                       const url =
                         'https://eu1.prisma.sh/demo/graphqlday-subscribers/prod'
-                      request(url, query, variables).then(data =>
+                        const client = new GraphQLClient(url, {
+                          headers: {
+                            Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InNlcnZpY2UiOiJncmFwaHFsZGF5LXN1YnNjcmliZXJzQHByb2QiLCJyb2xlcyI6WyJhZG1pbiJdfSwiaWF0IjoxNTIwMjU5OTUxLCJleHAiOjE1MjA4NjQ3NTF9.L7i1YmGHId_8Fd9vM5ZVLd0dqMI06MnO8wjLq04xRj8'
+                          }
+                        })
+                      client.request(query, variables).then(data =>
                         console.log(data),
                       )
                       modal.hide()

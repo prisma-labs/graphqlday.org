@@ -4,6 +4,5 @@ stage: prod
 datamodel: datamodel.graphql
 
 # to enable auth, provide
-# secret: my-secret
-disableAuth: true
-cluster: demo/prisma-eu1
+secret: amsterdam18
+cluster: nikolas/prisma-eu1
