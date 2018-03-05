@@ -71,7 +71,6 @@ export default class SubscribeModal extends React.Component {
                         console.log(data),
                       )
                       modal.hide()
-                      // e.stopPropagation()
                     }}
                   >
                     Submit
