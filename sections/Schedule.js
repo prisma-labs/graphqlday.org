@@ -145,18 +145,7 @@ const scheduleList = [
     time: '13:45 - 14:00',
   },
   {
-    title: 'Coffee break',
-    description: '',
-    images: [
-      {
-        src: '/static/coffee.svg',
-        icon: true,
-      },
-    ],
-    time: '13:45 - 14:00',
-  },
-  {
-    title: 'Building GraphQL servers with Node.js (Workshop)',
+    title: 'Building GraphQL servers with Node.js (Workshop - Part I)',
     description: 'Nikolas Burk',
     images: [
       {
@@ -166,7 +155,31 @@ const scheduleList = [
         ],
       },
     ],
-    time: '14:00 - 17:00',
+    time: '14:00 - 15:30',
+  },
+  {
+    title: 'Coffee break',
+    description: '',
+    images: [
+      {
+        src: '/static/coffee.svg',
+        icon: true,
+      },
+    ],
+    time: '15:30 - 16:00',
+  },
+  {
+    title: 'Building GraphQL servers with Node.js (Workshop - Part II)',
+    description: 'Nikolas Burk',
+    images: [
+      {
+        src: [
+          '/static/speakers/speaker-7.jpg',
+          '/static/speakers/speaker-7@2x.jpg',
+        ],
+      },
+    ],
+    time: '16:00 - 17:00',
   },
 ]
 
