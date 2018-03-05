@@ -19,7 +19,7 @@ const scheduleList = [
     time: '08:30 - 09:30',
   },
   {
-    title: 'Introduction to urql - A new GraphQL client for React ',
+    title: 'Introduction to urql - A new GraphQL Client for React ',
     description: 'Ken Wheeler',
     images: [
       {
@@ -45,7 +45,7 @@ const scheduleList = [
     time: '10:00 - 10:30',
   },
   {
-    title: 'Coffee break',
+    title: 'Coffee Break',
     description: '',
     images: [
       {
@@ -145,7 +145,7 @@ const scheduleList = [
     time: '13:45 - 14:00',
   },
   {
-    title: 'Building GraphQL servers with Node.js (Workshop - Part I)',
+    title: 'Building GraphQL Servers with Node.js (Workshop - Part I)',
     description: 'Nikolas Burk',
     images: [
       {
@@ -158,7 +158,7 @@ const scheduleList = [
     time: '14:00 - 15:30',
   },
   {
-    title: 'Coffee break',
+    title: 'Coffee Break',
     description: '',
     images: [
       {
@@ -169,7 +169,7 @@ const scheduleList = [
     time: '15:30 - 16:00',
   },
   {
-    title: 'Building GraphQL servers with Node.js (Workshop - Part II)',
+    title: 'Building GraphQL Servers with Node.js (Workshop - Part II)',
     description: 'Nikolas Burk',
     images: [
       {
