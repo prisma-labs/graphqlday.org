@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Subscribe } from 'unstated'
-import base64 from 'base-64'
+import { request } from 'graphql-request'
 
 import Button from 'components/Button'
 import ModalContainer from '../containers/ModalContainer'
@@ -50,34 +50,28 @@ export default class SubscribeModal extends React.Component {
                   </InputsWrapper>
                   <Button
                     onClick={() => {
-                      const dc = 'us15'
-                      const listId = '7651979ad7'
-                      const url = `https://${dc}.api.mailchimp.com/3.0/lists/${listId}/members`
-                      const apiKey = `d59c43b2824ec9b9331bfa69475f9589-${dc}`
-                      const { name, email } = this.state
-                      const headers = {
-                        // 'Authorization': `Basic ${base64.encode(`apikey:${apiKey}`)}`,
-                        Authorization: `apikey:${apiKey}`,
-                        'Access-Control-Allow-Origin': '*',
-                        'Access-Control-Allow-Methods':
-                          'POST, GET, OPTIONS, PUT, DELETE, HEAD',
+                      const { email, name } = this.state
+                      const query = `
+                    mutation Subscribe($name: String, $email: String!) {
+                      createSubscriber(data: {
+                        name: $name
+                        email: $email
+                      }) {
+                        id
                       }
-                      const data = {
-                        email_address: email,
-                        status: 'subscribed',
-                        merge_fields: {
-                          NAME: name,
-                        },
+                    }
+                    `
+                      const variables = {
+                        name,
+                        email,
                       }
-                      const body = JSON.stringify(data)
-                      fetch(url, {
-                        method: 'POST',
-                        headers,
-                        body,
-                      })
-                        .then(response => response.json())
-                        .then(json => console.log(json))
-                        .catch(e => console.log(e))
+                      const url =
+                        'https://eu1.prisma.sh/demo/graphqlday-subscribers/prod'
+                      request(url, query, variables).then(data =>
+                        console.log(data),
+                      )
+                      modal.hide()
+                      // e.stopPropagation()
                     }}
                   >
                     Submit

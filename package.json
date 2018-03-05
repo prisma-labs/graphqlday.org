@@ -12,8 +12,8 @@
     "trailingComma": "all"
   },
   "dependencies": {
-    "base-64": "^0.1.0",
     "graphiconf": "2.1.0",
+    "graphql-request": "^1.5.1",
     "next": "^5.0.0",
     "polished": "^1.9.2",
     "prop-types": "^15.6.0",
