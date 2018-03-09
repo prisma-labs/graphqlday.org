@@ -12,6 +12,7 @@ import SectionSubtitleDesc from 'components/SectionSubtitleDesc'
 import Ticket from 'components/Ticket'
 import TicketsRow from 'components/TicketsRow'
 import BigSwitch from 'components/BigSwitch'
+import em from 'polished';
 
 const onlyTicketData = [
   {
@@ -48,7 +49,7 @@ const withConfTicketData = [
   {
     price: '335€',
     name: 'Regular',
-    desc: 'Until 8th of April',
+    dc: 'Until 8th of April',
     disabled: true,
     href: eventbriteLinkWithCombi,
   },
@@ -129,10 +130,11 @@ class GetYourTicket extends Component {
 
             <SideNote>
               Are you a student - or do you want to attend but just don’t have
-              the means? We have set aside a number of tickets to include the
+              the means? We have set aside a number of free tickets to include the
               community.{' '}
-              <a href="mailto:support@graphql-europe.org">Write to us</a> and
-              let us know why you should come.
+              <a href="mailto:support@graphql-europe.org">Send us an email</a> and
+              let us know why you should come. The application deadline is <b>March 26</b>, 
+              winners will be announced a few days later.
             </SideNote>
           </SectionContent>
         </Container>
