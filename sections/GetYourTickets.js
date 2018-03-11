@@ -12,7 +12,6 @@ import SectionSubtitleDesc from 'components/SectionSubtitleDesc'
 import Ticket from 'components/Ticket'
 import TicketsRow from 'components/TicketsRow'
 import BigSwitch from 'components/BigSwitch'
-import em from 'polished'
 
 const onlyTicketData = [
   {
