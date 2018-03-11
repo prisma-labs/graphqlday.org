@@ -19,7 +19,7 @@ const scheduleList = [
     time: '08:30 - 09:30',
   },
   {
-    title: 'Introduction to urql - A new GraphQL client for React ',
+    title: 'Introduction to urql - A new GraphQL Client for React ',
     description: 'Ken Wheeler',
     images: [
       {
@@ -45,7 +45,7 @@ const scheduleList = [
     time: '10:00 - 10:30',
   },
   {
-    title: 'Coffee break',
+    title: 'Coffee Break',
     description: '',
     images: [
       {
@@ -94,29 +94,16 @@ const scheduleList = [
   },
   {
     title: 'Lightning Talk',
-    description: 'Manjula Dube',
+    description: 'Johannes Schickling',
     images: [
       {
         src: [
-          '/static/speakers/speaker-5.jpg',
-          '/static/speakers/speaker-5@2x.jpg',
+          '/static/speakers/speaker-9.jpg',
+          '/static/speakers/speaker-9@2x.jpg',
         ],
       },
     ],
     time: '13:00 - 13:15',
-  },
-  {
-    title: 'Lightning Talk',
-    description: 'Ivan Goncharov',
-    images: [
-      {
-        src: [
-          '/static/speakers/speaker-6.jpg',
-          '/static/speakers/speaker-6@2x.jpg',
-        ],
-      },
-    ],
-    time: '13:15 - 13:30',
   },
   {
     title: 'Lightning Talk',
@@ -132,18 +119,33 @@ const scheduleList = [
     time: '13:15 - 13:30',
   },
   {
-    title: 'Coffee break',
-    description: '',
+    title: 'Lightning Talk',
+    description: 'Ivan Goncharov',
     images: [
       {
-        src: '/static/coffee.svg',
-        icon: true,
+        src: [
+          '/static/speakers/speaker-6.jpg',
+          '/static/speakers/speaker-6@2x.jpg',
+        ],
+      },
+    ],
+    time: '13:30 - 13:45',
+  },
+  {
+    title: 'Lightning Talk',
+    description: 'Manjula Dube',
+    images: [
+      {
+        src: [
+          '/static/speakers/speaker-5.jpg',
+          '/static/speakers/speaker-5@2x.jpg',
+        ],
       },
     ],
     time: '13:45 - 14:00',
   },
   {
-    title: 'Building GraphQL servers with Node.js (Workshop)',
+    title: 'Building GraphQL Servers with Node.js (Workshop - Part I)',
     description: 'Nikolas Burk',
     images: [
       {
@@ -153,7 +155,31 @@ const scheduleList = [
         ],
       },
     ],
-    time: '14:00 - 17:00',
+    time: '14:00 - 15:30',
+  },
+  {
+    title: 'Coffee Break',
+    description: '',
+    images: [
+      {
+        src: '/static/coffee.svg',
+        icon: true,
+      },
+    ],
+    time: '15:30 - 16:00',
+  },
+  {
+    title: 'Building GraphQL Servers with Node.js (Workshop - Part II)',
+    description: 'Nikolas Burk',
+    images: [
+      {
+        src: [
+          '/static/speakers/speaker-7.jpg',
+          '/static/speakers/speaker-7@2x.jpg',
+        ],
+      },
+    ],
+    time: '16:00 - 17:00',
   },
 ]
 

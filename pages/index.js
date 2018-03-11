@@ -1,3 +1,5 @@
+import { Provider } from 'unstated'
+
 import Speakers from 'graphiconf/sections/Speakers'
 import CoOrganizedBy from 'graphiconf/sections/CoOrganizedBy'
 import FullImage from 'components/FullImage'
@@ -10,32 +12,37 @@ import GetYourTickets from '../sections/GetYourTickets'
 import Nemo from '../sections/Nemo'
 import Footer from '../sections/Footer'
 import Partners from '../sections/Partners'
+import SubscribeModal from '../components/SubscribeModal'
 
 export default () => (
-  <div>
-    <SeoTitle />
+  <Provider>
+    <div>
+      <SeoTitle />
 
-    <JoinUs />
-    <Speakers
-      heading="Meet our GraphQL expert speakers"
-      speakersList={speakersList}
-    />
-    <Schedule />
+      <JoinUs />
+      <Speakers
+        heading="Meet our GraphQL expert speakers"
+        speakersList={speakersList}
+      />
+      <Schedule />
 
-    <div style={{ padding: '140px 0 70px 0' }}>
-      <FullImage src="/static/nemo-1.jpg" />
+      <div style={{ padding: '140px 0 70px 0' }}>
+        <FullImage src="/static/nemo-1.jpg" />
+      </div>
+
+      <Nemo />
+      <GetYourTickets />
+
+      <FullImage src="/static/nemo-3.jpg" />
+
+      <div style={{ padding: '80px 0 30px 0' }}>
+        <Partners />
+        <CoOrganizedBy />
+      </div>
+
+      <SubscribeModal />
+
+      <Footer />
     </div>
-
-    <Nemo />
-    <GetYourTickets />
-
-    <FullImage src="/static/nemo-3.jpg" />
-
-    <div style={{ padding: '80px 0 30px 0' }}>
-      <Partners />
-      <CoOrganizedBy />
-    </div>
-
-    <Footer />
-  </div>
+  </Provider>
 )

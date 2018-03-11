@@ -1,0 +1,8 @@
+service: graphqlday-subscribers
+stage: prod
+
+datamodel: datamodel.graphql
+
+# to enable auth, provide
+secret: amsterdam18
+cluster: nikolas/prisma-eu1
