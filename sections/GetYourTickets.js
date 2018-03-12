@@ -18,7 +18,7 @@ const onlyTicketData = [
     price: '59€',
     name: 'Early Bird',
     desc: 'Until 21st of March',
-    disabled: false,
+    disabled: true,
     href: eventbriteLink,
   },
   {
@@ -42,7 +42,7 @@ const withConfTicketData = [
     price: '330€',
     name: 'Early Bird',
     desc: 'Until 21st of March',
-    disabled: false,
+    disabled: true,
     href: eventbriteLinkWithCombi,
   },
   {
