@@ -116,7 +116,7 @@ class GetYourTicket extends Component {
                           price={ticket.price}
                           name={ticket.name}
                           desc={ticket.desc}
-                          href="#get-your-ticket"
+                          href={ticket.href}
                           onSelect={() => ticket.disabled || modal.show()}
                           disabled={ticket.disabled}
                         />
