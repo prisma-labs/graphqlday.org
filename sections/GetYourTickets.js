@@ -17,7 +17,7 @@ const onlyTicketData = [
   {
     price: '59€',
     name: 'Early Bird',
-    desc: 'Until 21st of March',
+    desc: 'Until 23rd of March',
     disabled: false,
     href: eventbriteLink,
   },
@@ -41,7 +41,7 @@ const withConfTicketData = [
   {
     price: '330€',
     name: 'Early Bird',
-    desc: 'Until 21st of March',
+    desc: 'Until 23rd of March',
     disabled: false,
     href: eventbriteLinkWithCombi,
   },
@@ -116,7 +116,7 @@ class GetYourTicket extends Component {
                           price={ticket.price}
                           name={ticket.name}
                           desc={ticket.desc}
-                          href="#get-your-ticket"
+                          href={ticket.href}
                           onSelect={() => ticket.disabled || modal.show()}
                           disabled={ticket.disabled}
                         />

@@ -20,9 +20,9 @@ const renderAnchorLinks = NavItem => [
   <NavItem key="6" href="/team">
     Team
   </NavItem>,
-  // <NavItem key="7" href={eventbriteLink} isButtonStyle={true}>
-  //   Get Tickets
-  // </NavItem>,
+  <NavItem key="7" href={eventbriteLink} isButtonStyle={true}>
+    Get Tickets
+  </NavItem>,
 ]
 
 const renderNormalLinks = NavItem => [
@@ -35,7 +35,7 @@ const renderNormalLinks = NavItem => [
   <NavItem key="6" href="/team">
     Team
   </NavItem>,
-  // <NavItem key="7" href={eventbriteLink} isButtonStyle={true}>
-  //   Get Tickets
-  // </NavItem>,
+  <NavItem key="7" href={eventbriteLink} isButtonStyle={true}>
+    Get Tickets
+  </NavItem>,
 ]

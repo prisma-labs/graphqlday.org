@@ -53,7 +53,9 @@ const JoinUsIntro = () => (
                 <Subscribe to={[ModalContainer]}>
                   {modal => (
                     <ButtonWrapper>
-                      <Button onClick={modal.show}>Get Tickets</Button>
+                      <Button isLink={true} href={eventbriteLink}>
+                        Get Tickets
+                      </Button>
                     </ButtonWrapper>
                   )}
                 </Subscribe>
