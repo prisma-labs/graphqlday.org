@@ -13,7 +13,11 @@ const Sponsors = () => (
         <Grid>
           <GridItem>
             <a href="https://www.mijndomein.nl/">
-              <LogoImage src="/static/logos/mijndomein.png" alt="Mijndomein" />
+              <LogoImage
+                src="/static/logos/mijndomein.png"
+                alt="Mijndomein"
+                style={{ transform: 'scale(1.07)' }}
+              />
             </a>
           </GridItem>
         </Grid>
