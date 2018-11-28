@@ -4,7 +4,7 @@ import { Provider } from 'unstated'
 // import CoOrganizedBy from 'graphiconf/sections/CoOrganizedBy'
 // import FullImage from 'components/FullImage'
 
-import { speakersList } from '../utils/data'
+// import { speakersList } from '../utils/data'
 import SeoTitle from '../components/SeoTitle'
 import JoinUs from '../sections/JoinUs'
 // import Schedule from '../sections/Schedule'
@@ -21,8 +21,9 @@ export default () => (
       <SeoTitle />
 
       <JoinUs />
+      {/*
       <Speakers heading="Speakers coming soon" speakersList={speakersList} />
-
+      */}
       <Nemo />
       <GetYourTickets />
 
