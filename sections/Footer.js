@@ -1,9 +1,7 @@
 import { Fragment } from 'react'
-import { Twitter, Medium, Mail } from 'components/Icons'
+import { Twitter, Mail } from 'components/Icons'
 import Footer from 'components/Footer'
 import Link from 'next/link'
-
-import { eventbriteLink } from '../utils/config'
 
 export default () => (
   <Footer
@@ -16,8 +14,10 @@ export default () => (
     }) => (
       <Fragment>
         <Column>
-          <Link href={eventbriteLink}>
-            <LinkItem href={eventbriteLink}>Get Tickets</LinkItem>
+          <Link href="https://docs.google.com/forms/d/e/1FAIpQLSet0Ipr_pObypzLYchHJiEOi-CQNy7r79WFTUzQGRlhdLGA9Q/viewform">
+            <LinkItem href="https://docs.google.com/forms/d/e/1FAIpQLSet0Ipr_pObypzLYchHJiEOi-CQNy7r79WFTUzQGRlhdLGA9Q/viewform">
+              SUBMIT YOUR TALK
+            </LinkItem>
           </Link>
 
           {isHomePage() ? (
@@ -29,40 +29,24 @@ export default () => (
               <LinkItem href="/#venue">Venue</LinkItem>
             </Link>
           )}
-
-          <Link>
-            <LinkItem href="https://graphql-europe.org">
-              GraphQL Europe
-            </LinkItem>
-          </Link>
-          <Link key="4" href="/team">
-            <LinkItem href="/team">Team</LinkItem>
-          </Link>
         </Column>
 
         <Column>
           {/* <LinkItem href="https://api.graphql-europe.org">API</LinkItem> */}
           <LinkItem href="/code-of-conduct">Code of Conduct</LinkItem>
-          <LinkItem href="/imprint">Imprint</LinkItem>
           <LinkItem href="https://github.com/graphcool/graphqlday.org">
             <span>View source</span>
           </LinkItem>
         </Column>
 
         <Column>
-          <LinkItem href="https://twitter.com/graphqleu">
+          <LinkItem href="https://twitter.com/ok_grow">
             <IconWrapper>
               <Twitter />
             </IconWrapper>
             <span>Twitter</span>
           </LinkItem>
-          <LinkItem href="https://medium.com/graphql-europe">
-            <IconWrapper medium>
-              <Medium />
-            </IconWrapper>
-            <span>Medium</span>
-          </LinkItem>
-          <LinkItem href="mailto:support@graphql-europe.org">
+          <LinkItem href="mailto:hello@okgrow.com">
             <IconWrapper>
               <Mail />
             </IconWrapper>

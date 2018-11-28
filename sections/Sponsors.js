@@ -8,14 +8,14 @@ import { Grid, GridItem, LogoImage } from 'components/LogoGrid'
 const Sponsors = () => (
   <Wrapper>
     <Container>
-      <SectionContent style={{ paddingBottom: '2.5rem' }}>
-        <SectionTitle>Sponsored by</SectionTitle>
+      <SectionContent style={{ paddingTop: 0, paddingBottom: '2.5rem' }}>
+        <SectionTitle>Organized by</SectionTitle>
         <Grid>
           <GridItem>
-            <a href="https://www.mijndomein.nl/">
+            <a href="https://www.okgrow.come/">
               <LogoImage
-                src="/static/logos/mijndomein.png"
-                alt="Mijndomein"
+                src="/static/logos/okgrow.png"
+                alt="OK GROW!"
                 style={{ transform: 'scale(1.07)' }}
               />
             </a>

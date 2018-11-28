@@ -18,7 +18,7 @@ const Nemo = () => (
           <PinkImage.Bg left={0} width="calc(100% - 250px)" />
           <Content>
             <ImageWrapper>
-              <PinkImage.Image src="/static/nemo-2.png" pinkAlign="start" />
+              <PinkImage.Image src="/static/telus.jpg" pinkAlign="start" />
             </ImageWrapper>
           </Content>
         </Fragment>
@@ -26,13 +26,15 @@ const Nemo = () => (
       renderEnd={Content => (
         <Content>
           <Texts>
-            <SectionTitle>NEMO Science Museum</SectionTitle>
+            <SectionTitle>Venue</SectionTitle>
             <Desc>
-              Right in the middle of NEMO there is an enormous auditorium. The
-              sloped seating gives a perfect view of the impressive
-              projection screen. It is a perfect location for conferences and
-              conventions, at the very heart of technology, science and
-              innovation.
+              TELUS Digital is a team of highly skilled professionals dedicated
+              to building innovative, data-driven, customer centric digital
+              experiences by managing TELUS'​ digital assets. We run like a
+              start-up, we’ve embraced lean and agile methodologies. We
+              celebrate our failures and see them as opportunities to learn. Our
+              culture fosters collaborative learning and out-of-the-box thinking
+              in a relaxed environment.
             </Desc>
           </Texts>
         </Content>

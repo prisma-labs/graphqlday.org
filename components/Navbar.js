@@ -3,7 +3,7 @@ import { eventbriteLink } from '../utils/config'
 
 export default () => (
   <Navbar
-    title="GraphQL Day"
+    title="GraphQL Day Toronto"
     renderNormalLinks={renderNormalLinks}
     renderAnchorLinks={renderAnchorLinks}
   />
@@ -14,14 +14,12 @@ const renderAnchorLinks = NavItem => [
   <NavItem key="4" href="#venue" isAnchor={true}>
     Venue
   </NavItem>,
-  <NavItem key="5" href="https://graphql-europe.org">
-    GraphQL Europe
-  </NavItem>,
-  <NavItem key="6" href="/team">
-    Team
-  </NavItem>,
-  <NavItem key="7" href={eventbriteLink} isButtonStyle={true}>
-    Get Tickets
+  <NavItem
+    key="6"
+    href="https://docs.google.com/forms/d/e/1FAIpQLSet0Ipr_pObypzLYchHJiEOi-CQNy7r79WFTUzQGRlhdLGA9Q/viewform"
+    isButtonStyle={true}
+  >
+    SUBMIT YOUR TALK
   </NavItem>,
 ]
 
@@ -29,13 +27,11 @@ const renderNormalLinks = NavItem => [
   <NavItem key="4" href="/#venue">
     Venue
   </NavItem>,
-  <NavItem key="5" href="https://graphql-europe.org">
-    GraphQL Europe
-  </NavItem>,
-  <NavItem key="6" href="/team">
-    Team
-  </NavItem>,
-  <NavItem key="7" href={eventbriteLink} isButtonStyle={true}>
-    Get Tickets
+  <NavItem
+    key="6"
+    href="https://docs.google.com/forms/d/e/1FAIpQLSet0Ipr_pObypzLYchHJiEOi-CQNy7r79WFTUzQGRlhdLGA9Q/viewform"
+    isButtonStyle={true}
+  >
+    SUBMIT YOUR TALK
   </NavItem>,
 ]

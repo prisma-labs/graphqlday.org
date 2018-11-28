@@ -7,7 +7,7 @@ import { textGrey } from 'utils/colors'
 import { upperCaseHeading } from 'utils/mixins'
 import { navHeight, mobileNavHeight } from 'utils/sizes'
 import { mobile } from 'utils/media'
-import { eventbriteLink } from '../utils/config'
+// import { eventbriteLink } from '../utils/config'
 import Navbar from '../components/Navbar'
 import TwinsContainer from 'components/TwinsContainer'
 import SectionContent from 'components/SectionContent'
@@ -29,32 +29,34 @@ const JoinUsIntro = () => (
           <Content>
             <ContentWrapper>
               <SectionContent>
-                <Title>Join us for GraphQL Day!</Title>
+                <Title>Join us for GraphQL Day Toronto!</Title>
                 <Description>
-                  GraphQL Day is a hands-on one day developer conference and
-                  workshop for lovers of GraphQL. GraphQL Day is part of the
-                  GraphQL Europe family, Europe’s only GraphQL conference,
-                  organized by Graphcool and Honeypot.
+                  GraphQL Day is a single-day event focusing on GraphQL, an API
+                  technology that is being rapidly adopted by large companies.
+                  The audience would be both software developers and development
+                  managers, and many of them are expected to be from large
+                  companies based on the demographics of other similar events.
                 </Description>
 
                 <Meta>
                   <MetaItem>
                     <MetaItemKey>Date</MetaItemKey>
-                    <MetaItemValue>14th April, 2018</MetaItemValue>
+                    <MetaItemValue>28th February, 2019</MetaItemValue>
                   </MetaItem>
                   <MetaItem>
                     <MetaItemKey>Location</MetaItemKey>
-                    <MetaItemValue>
-                      NEMO Science Museum, Amsterdam
-                    </MetaItemValue>
+                    <MetaItemValue>TELUS Digital, Toronto</MetaItemValue>
                   </MetaItem>
                 </Meta>
 
                 <Subscribe to={[ModalContainer]}>
                   {modal => (
                     <ButtonWrapper>
-                      <Button isLink={true} href={eventbriteLink}>
-                        Get Tickets
+                      <Button
+                        isLink={true}
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSet0Ipr_pObypzLYchHJiEOi-CQNy7r79WFTUzQGRlhdLGA9Q/viewform"
+                      >
+                        SUBMIT YOUR TALK
                       </Button>
                     </ButtonWrapper>
                   )}
