@@ -52,10 +52,14 @@ const JoinUsIntro = () => (
                   {modal => (
                     <ButtonWrapper>
                       <Button
+                        style={{ marginRight: 24, marginBottom: 24 }}
                         isLink={true}
                         href="https://docs.google.com/forms/d/e/1FAIpQLSet0Ipr_pObypzLYchHJiEOi-CQNy7r79WFTUzQGRlhdLGA9Q/viewform"
                       >
                         SUBMIT YOUR TALK
+                      </Button>
+                      <Button isLink={true} href="mailto:hello@okgrow.com">
+                        BECOME A SPONSOR
                       </Button>
                     </ButtonWrapper>
                   )}
