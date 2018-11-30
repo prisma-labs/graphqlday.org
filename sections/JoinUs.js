@@ -31,13 +31,12 @@ const JoinUsIntro = () => (
               <SectionContent>
                 <Title>Join us for GraphQL Day Toronto!</Title>
                 <Description>
-                  GraphQL Day is a single-day event focusing on GraphQL, an API
-                  technology that is being rapidly adopted by large companies.
-                  The audience would be both software developers and development
-                  managers, and many of them are expected to be from large
-                  companies based on the demographics of other similar events.
+                  GraphQL Day Toronto is a single-day conference focusing on all
+                  things GraphQL. Learn more about what GraphQL can do, hear
+                  from a lineup of thought leaders in the space, and meet other
+                  decision makers with similar issues that can be solved with
+                  GraphQL.
                 </Description>
-
                 <Meta>
                   <MetaItem>
                     <MetaItemKey>Date</MetaItemKey>

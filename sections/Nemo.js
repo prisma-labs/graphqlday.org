@@ -28,13 +28,12 @@ const Nemo = () => (
           <Texts>
             <SectionTitle>Venue</SectionTitle>
             <Desc>
-              TELUS Digital is a team of highly skilled professionals dedicated
-              to building innovative, data-driven, customer centric digital
-              experiences by managing TELUS'​ digital assets. We run like a
-              start-up, we’ve embraced lean and agile methodologies. We
-              celebrate our failures and see them as opportunities to learn. Our
-              culture fosters collaborative learning and out-of-the-box thinking
-              in a relaxed environment.
+              New telus venue blurb " At TELUS Digital, we know that technology
+              makes the world go faster and we’re delivering at a speed unheard
+              of in a large organization. As a team, we're united through our
+              shared passion to advance the customer experience, and find new
+              ways to work smarter and better everyday. Find out more about the
+              team at <a href="www.telus.com/digital">www.telus.com/digital</a>.
             </Desc>
           </Texts>
         </Content>
