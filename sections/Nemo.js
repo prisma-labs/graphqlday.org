@@ -18,7 +18,7 @@ const Nemo = () => (
           <PinkImage.Bg left={0} width="calc(100% - 250px)" />
           <Content>
             <ImageWrapper>
-              <PinkImage.Image src="/static/telus.jpg" pinkAlign="start" />
+              <PinkImage.Image src="/static/people.jpg" pinkAlign="start" />
             </ImageWrapper>
           </Content>
         </Fragment>
@@ -26,14 +26,14 @@ const Nemo = () => (
       renderEnd={Content => (
         <Content>
           <Texts>
-            <SectionTitle>Venue</SectionTitle>
+            <SectionTitle>Venue Partner</SectionTitle>
             <Desc>
               At TELUS Digital, we know that technology makes the world go
               faster and we’re delivering at a speed unheard of in a large
               organization. As a team, we're united through our shared passion
               to advance the customer experience, and find new ways to work
               smarter and better everyday. Find out more about the team at{' '}
-              <a href="www.telus.com/digital">www.telus.com/digital</a>.
+              <a href="https://www.telus.com/digital">www.telus.com/digital</a>.
             </Desc>
           </Texts>
         </Content>

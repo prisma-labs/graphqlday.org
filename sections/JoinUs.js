@@ -29,7 +29,7 @@ const JoinUsIntro = () => (
           <Content>
             <ContentWrapper>
               <SectionContent>
-                <Title>Join us for GraphQL Day Toronto!</Title>
+                <Title>Join us at GraphQL Day Toronto!</Title>
                 <Description>
                   GraphQL Day Toronto is a single-day conference focusing on all
                   things GraphQL. Learn more about what GraphQL can do, hear
@@ -73,7 +73,10 @@ const JoinUsIntro = () => (
             <PinkImage.Bg right={0} />
             <Content style={{ position: 'relative' }}>
               <ImageWrapper>
-                <PinkImage.Image retina={false} src="/static/photo.png" />
+                <PinkImage.Image
+                  retina={false}
+                  src="/static/telus-square.jpg"
+                />
               </ImageWrapper>
             </Content>
           </Fragment>

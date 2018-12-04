@@ -12,7 +12,7 @@ const Sponsors = () => (
         <SectionTitle>Organized by</SectionTitle>
         <Grid>
           <GridItem>
-            <a href="https://www.okgrow.come/">
+            <a href="https://www.okgrow.com/">
               <LogoImage
                 src="/static/logos/okgrow.png"
                 alt="OK GROW!"
