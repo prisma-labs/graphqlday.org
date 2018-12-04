@@ -28,12 +28,12 @@ const Nemo = () => (
           <Texts>
             <SectionTitle>Venue</SectionTitle>
             <Desc>
-              New telus venue blurb " At TELUS Digital, we know that technology
-              makes the world go faster and we’re delivering at a speed unheard
-              of in a large organization. As a team, we're united through our
-              shared passion to advance the customer experience, and find new
-              ways to work smarter and better everyday. Find out more about the
-              team at <a href="www.telus.com/digital">www.telus.com/digital</a>.
+              At TELUS Digital, we know that technology makes the world go
+              faster and we’re delivering at a speed unheard of in a large
+              organization. As a team, we're united through our shared passion
+              to advance the customer experience, and find new ways to work
+              smarter and better everyday. Find out more about the team at{' '}
+              <a href="www.telus.com/digital">www.telus.com/digital</a>.
             </Desc>
           </Texts>
         </Content>

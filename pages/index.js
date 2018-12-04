@@ -14,6 +14,7 @@ import Footer from '../sections/Footer'
 // import Partners from '../sections/Partners'
 import Sponsors from '../sections/Sponsors'
 import SubscribeModal from '../components/SubscribeModal'
+import styled from 'styled-components'
 
 export default () => (
   <Provider>
@@ -34,8 +35,16 @@ export default () => (
       </div>
 
       <SubscribeModal />
-
-      <Footer />
+      <FooterContainer>
+        <Footer />
+      </FooterContainer>
     </div>
   </Provider>
 )
+
+const FooterContainer = styled.div`
+  div[class^='Footer__End'],
+  div[class*=' Footer__End'] {
+    display: none;
+  }
+`
