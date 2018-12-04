@@ -42,6 +42,7 @@ export default () => (
   </Provider>
 )
 
+// TODO: clone the graphiconf package and change the image there
 const FooterContainer = styled.div`
   div[class^='Footer__End'],
   div[class*=' Footer__End'] {
