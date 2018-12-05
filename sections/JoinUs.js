@@ -73,10 +73,7 @@ const JoinUsIntro = () => (
             <PinkImage.Bg right={0} />
             <Content style={{ position: 'relative' }}>
               <ImageWrapper>
-                <PinkImage.Image
-                  retina={false}
-                  src="/static/telus-square.jpg"
-                />
+                <PinkImage.Image retina={false} src="/static/toronto.png" />
               </ImageWrapper>
             </Content>
           </Fragment>
