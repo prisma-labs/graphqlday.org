@@ -7,7 +7,7 @@ import { textGrey } from 'utils/colors'
 import { upperCaseHeading } from 'utils/mixins'
 import { navHeight, mobileNavHeight } from 'utils/sizes'
 import { mobile } from 'utils/media'
-import { eventbriteLink } from '../utils/config'
+// import { eventbriteLink } from '../utils/config'
 import Navbar from '../components/Navbar'
 import TwinsContainer from 'components/TwinsContainer'
 import SectionContent from 'components/SectionContent'
@@ -29,32 +29,37 @@ const JoinUsIntro = () => (
           <Content>
             <ContentWrapper>
               <SectionContent>
-                <Title>Join us for GraphQL Day!</Title>
+                <Title>Join us at GraphQL Day Toronto!</Title>
                 <Description>
-                  GraphQL Day is a hands-on one day developer conference and
-                  workshop for lovers of GraphQL. GraphQL Day is part of the
-                  GraphQL Europe family, Europe’s only GraphQL conference,
-                  organized by Graphcool and Honeypot.
+                  GraphQL Day Toronto is a single-day conference focusing on all
+                  things GraphQL. Learn more about what GraphQL can do, hear
+                  from a lineup of thought leaders in the space, and meet other
+                  decision makers with similar issues that can be solved with
+                  GraphQL.
                 </Description>
-
                 <Meta>
                   <MetaItem>
                     <MetaItemKey>Date</MetaItemKey>
-                    <MetaItemValue>14th April, 2018</MetaItemValue>
+                    <MetaItemValue>28th February, 2019</MetaItemValue>
                   </MetaItem>
                   <MetaItem>
                     <MetaItemKey>Location</MetaItemKey>
-                    <MetaItemValue>
-                      NEMO Science Museum, Amsterdam
-                    </MetaItemValue>
+                    <MetaItemValue>TELUS Digital, Toronto</MetaItemValue>
                   </MetaItem>
                 </Meta>
 
                 <Subscribe to={[ModalContainer]}>
                   {modal => (
                     <ButtonWrapper>
-                      <Button isLink={true} href={eventbriteLink}>
-                        Get Tickets
+                      <Button
+                        style={{ marginRight: 24, marginBottom: 24 }}
+                        isLink={true}
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSet0Ipr_pObypzLYchHJiEOi-CQNy7r79WFTUzQGRlhdLGA9Q/viewform"
+                      >
+                        SUBMIT YOUR TALK
+                      </Button>
+                      <Button isLink={true} href="mailto:hello@okgrow.com">
+                        BECOME A SPONSOR
                       </Button>
                     </ButtonWrapper>
                   )}
@@ -68,7 +73,7 @@ const JoinUsIntro = () => (
             <PinkImage.Bg right={0} />
             <Content style={{ position: 'relative' }}>
               <ImageWrapper>
-                <PinkImage.Image retina={false} src="/static/photo.png" />
+                <PinkImage.Image retina={false} src="/static/toronto.png" />
               </ImageWrapper>
             </Content>
           </Fragment>

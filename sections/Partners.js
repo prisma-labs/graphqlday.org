@@ -3,14 +3,14 @@ import styled from 'styled-components'
 import Container from 'components/Container'
 import SectionContent from 'components/SectionContent'
 import SectionTitle from 'components/SectionTitle'
-import { Grid, GridItem, LogoImage } from 'components/LogoGrid'
+// import { Grid, GridItem, LogoImage } from 'components/LogoGrid'
 
 const Partners = () => (
   <Wrapper>
     <Container>
       <SectionContent style={{ paddingTop: 30, paddingBottom: 80 }}>
         <SectionTitle>Our Partners</SectionTitle>
-        <Grid>
+        {/*<Grid>
           <GridItem>
             <a href="https://react.amsterdam">
               <LogoImage
@@ -20,6 +20,7 @@ const Partners = () => (
             </a>
           </GridItem>
         </Grid>
+        */}
       </SectionContent>
     </Container>
   </Wrapper>

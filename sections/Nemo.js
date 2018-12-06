@@ -18,7 +18,7 @@ const Nemo = () => (
           <PinkImage.Bg left={0} width="calc(100% - 250px)" />
           <Content>
             <ImageWrapper>
-              <PinkImage.Image src="/static/nemo-2.png" pinkAlign="start" />
+              <PinkImage.Image src="/static/people.jpg" pinkAlign="start" />
             </ImageWrapper>
           </Content>
         </Fragment>
@@ -26,14 +26,20 @@ const Nemo = () => (
       renderEnd={Content => (
         <Content>
           <Texts>
-            <SectionTitle>NEMO Science Museum</SectionTitle>
+            <SectionTitle>Venue Partner</SectionTitle>
             <Desc>
-              Right in the middle of NEMO there is an enormous auditorium. The
-              sloped seating gives a perfect view of the impressive
-              projection screen. It is a perfect location for conferences and
-              conventions, at the very heart of technology, science and
-              innovation.
+              At TELUS Digital, we know that technology makes the world go
+              faster and we’re delivering at a speed unheard of in a large
+              organization. As a team, we're united through our shared passion
+              to advance the customer experience, and find new ways to work
+              smarter and better everyday. Find out more about the team at{' '}
+              <a href="https://www.telus.com/digital">www.telus.com/digital</a>.
             </Desc>
+            <img
+              src="/static/logos/telus.png"
+              alt="telus"
+              style={{ width: '60%' }}
+            />
           </Texts>
         </Content>
       )}
