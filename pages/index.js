@@ -27,8 +27,8 @@ export default () => (
       */}
       <SpeakersComingSoon>
         <p>
-          Hear from the thought leaders in the GraphQL space including speakers
-          from GitHub, Shopify, Amazon, TELUS, and more!
+          Hear from thought leaders in the GraphQL space including speakers from
+          GitHub, Shopify, Amazon, TELUS, and more!
         </p>
         <p> Speakers and schedule coming soon.</p>
       </SpeakersComingSoon>
