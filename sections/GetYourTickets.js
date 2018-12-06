@@ -2,11 +2,10 @@ import { Component } from 'react'
 import { Subscribe } from 'unstated'
 import styled from 'styled-components'
 
-// import { eventbriteLink, eventbriteLinkWithCombi } from '../utils/config'
+import { eventbriteLink } from '../utils/config'
 // import { muteText } from 'utils/colors'
 import ModalContainer from '../containers/ModalContainer'
 import Container from 'components/Container'
-import SectionTitle from 'components/SectionTitle'
 import SectionContent from 'components/SectionContent'
 import SectionSubtitleDesc from 'components/SectionSubtitleDesc'
 import Ticket from 'components/Ticket'
@@ -15,44 +14,11 @@ import TicketsRow from 'components/TicketsRow'
 
 const onlyTicketData = [
   {
-    price: 'Coming Soon',
-    name: 'Early Bird',
-    desc: 'Sold out!',
-    disabled: true,
-    // href: eventbriteLink,
-  },
-  {
-    price: 'Coming Soon',
-    name: 'Regular',
-    desc: 'Sold out!',
-    disabled: true,
-  },
-  {
-    price: 'Coming Soon',
-    name: 'Late Bird',
-    desc: 'See you next year!',
-    disabled: true,
-  },
-]
-
-const withConfTicketData = [
-  {
-    price: '$330',
-    name: 'Early Bird',
-    desc: 'Sales end!',
-    disabled: true,
-  },
-  {
-    price: '$335',
-    name: 'Regular',
-    desc: 'Sales end',
-    disabled: true,
-  },
-  {
-    price: '$345',
-    name: 'Late Bird',
-    desc: 'See you next year!',
-    disabled: true,
+    price: '$100',
+    name: 'General Admission',
+    // desc: 'Access to the conference?',
+    disabled: false,
+    href: eventbriteLink,
   },
 ]
 
@@ -68,14 +34,6 @@ class GetYourTicket extends Component {
       <Wrapper id="get-your-ticket">
         <Container>
           <SectionContent>
-            <Headings>
-              <SectionTitle>Get your tickets!</SectionTitle>
-              <SectionSubtitleDesc>
-                Tickets for GraphQL Day Toronto include entry to the conference,
-                delicious eats, and reception!
-              </SectionSubtitleDesc>
-            </Headings>
-
             <Subscribe to={[ModalContainer]}>
               {modal => (
                 <TicketsRow.Row>
@@ -97,6 +55,12 @@ class GetYourTicket extends Component {
                 </TicketsRow.Row>
               )}
             </Subscribe>
+            <Headings style={{ marginTop: 24 }}>
+              <SectionSubtitleDesc>
+                Tickets for GraphQL Day Toronto include entry to the conference,
+                delicious eats, and reception.
+              </SectionSubtitleDesc>
+            </Headings>
           </SectionContent>
         </Container>
       </Wrapper>

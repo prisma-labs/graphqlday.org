@@ -35,6 +35,11 @@ const Nemo = () => (
               smarter and better everyday. Find out more about the team at{' '}
               <a href="https://www.telus.com/digital">www.telus.com/digital</a>.
             </Desc>
+            <img
+              src="/static/logos/telus.png"
+              alt="telus"
+              style={{ width: '60%' }}
+            />
           </Texts>
         </Content>
       )}
