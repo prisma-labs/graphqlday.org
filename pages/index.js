@@ -25,6 +25,13 @@ export default () => (
       {/*
       <Speakers heading="Speakers coming soon" speakersList={speakersList} />
       */}
+      <SpeakersComingSoon>
+        <p>
+          Hear from the thought leaders in the GraphQL space including speakers
+          from GitHub, Shopify, Amazon, TELUS, and more!
+        </p>
+        <p> Speakers and schedule coming soon.</p>
+      </SpeakersComingSoon>
       <Nemo />
       <GetYourTickets />
 
@@ -47,5 +54,15 @@ const FooterContainer = styled.div`
   div[class^='Footer__End'],
   div[class*=' Footer__End'] {
     display: none;
+  }
+`
+
+const SpeakersComingSoon = styled.div`
+  max-width: 900px;
+  padding: 56px 24px;
+  margin: 0 auto;
+  font-size: 36px;
+  @media (max-width: 700px) {
+    font-size: 24px;
   }
 `
