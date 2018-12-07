@@ -52,42 +52,59 @@ export default class MyDocument extends Document {
           />
           <link rel="manifest" href="/static/manifest.json" />
           <meta name="theme-color" content="#DB3F74" />
-
+          */}
           <meta
             name="keywords"
-            content="GraphQL,conference,Europe,Berlin,2018"
+            content="GraphQL,conference,Canada,Toronto,2019"
           />
           <meta
             name="description"
-            content="GraphQL Europe - Berlin, June 15th, 2018 - Join Europe’s biggest GraphQL-dedicated conference"
+            content="GraphQL Day Toronto - Toronto, February 28th, 2018 - Hear from thought leaders in the GraphQL space including speakers from
+            GitHub, Shopify, Amazon, TELUS, and more!"
           />
 
           <meta property="og:type" content="article" />
-          <meta property="og:url" content="https://graphql-europe.org/" />
+          <meta property="og:url" content="https://graphqlday.org/" />
           <meta
             property="og:description"
-            content="GraphQL Europe - Berlin, June 15th, 2018 - Join Europe’s biggest GraphQL-dedicated conference"
+            content="GraphQL Day Toronto - Toronto, February 28th, 2018 - Hear from thought leaders in the GraphQL space including speakers from
+            GitHub, Shopify, Amazon, TELUS, and more!"
           />
           <meta
             property="og:image:url"
-            content="https://graphql-europe.org/static/GrapQL-Europe-2018-banner.jpg"
+            content="/static/GrapQL-Toronto-2019-banner.jpg"
           />
 
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:site" content="@graphqleu" />
-          <meta name="twitter:creator" content="@graphqleu" />
+          <meta name="twitter:site" content="@ok_grow" />
+          <meta name="twitter:creator" content="@ok_grow" />
           <meta
             name="twitter:description"
-            content="GraphQL Europe - Berlin, June 15th, 2018 - Join Europe’s biggest GraphQL-dedicated conference"
+            content="GraphQL Day Toronto - Toronto, February 28th, 2018 - Hear from thought leaders in the GraphQL space including speakers from
+            GitHub, Shopify, Amazon, TELUS, and more!"
           />
           <meta
             name="twitter:image"
-            content="https://graphql-europe.org/static/GrapQL-Europe-2018-banner.jpg"
+            content="/static/GrapQL-Toronto-2019-banner.jpg"
           />
 
-          <link rel="canonical" href="https://graphql-europe.org" /> */}
+          <link rel="canonical" href="https://graphqlday.org" />
 
           <link rel="stylesheet" href="https://use.typekit.net/sez2ksz.css" />
+
+          {/*<!-- Global site tag (gtag.js) - Google Analytics -->*/}
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-28443514-15"
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-28443514-15');`,
+            }}
+          />
 
           {this.props.styleTags}
         </Head>

@@ -15,7 +15,7 @@ const renderAnchorLinks = NavItem => [
     Venue
   </NavItem>,
   <NavItem key="6" href={eventbriteLink} isButtonStyle={true}>
-    Get Tickets
+    Tickets
   </NavItem>,
 ]
 
@@ -24,6 +24,6 @@ const renderNormalLinks = NavItem => [
     Venue
   </NavItem>,
   <NavItem key="6" href={eventbriteLink} isButtonStyle={true}>
-    Get Tickets
+    Tickets
   </NavItem>,
 ]
