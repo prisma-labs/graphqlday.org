@@ -72,7 +72,7 @@ export default class MyDocument extends Document {
           />
           <meta
             property="og:image:url"
-            content="/static/GrapQL-Toronto-2019-banner.jpg"
+            content="https://www.graphqlday.org/static/GrapQL-Toronto-2019-banner.jpg"
           />
 
           <meta name="twitter:card" content="summary_large_image" />
@@ -85,7 +85,7 @@ export default class MyDocument extends Document {
           />
           <meta
             name="twitter:image"
-            content="/static/GrapQL-Toronto-2019-banner.jpg"
+            content="https://www.graphqlday.org/static/GrapQL-Toronto-2019-banner.jpg"
           />
 
           <link rel="canonical" href="https://graphqlday.org" />
