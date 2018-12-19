@@ -1,10 +1,10 @@
 import { Provider } from 'unstated'
 
-// import Speakers from 'graphiconf/sections/Speakers'
+import Speakers from 'graphiconf/sections/Speakers'
 // import CoOrganizedBy from 'graphiconf/sections/CoOrganizedBy'
 // import FullImage from 'components/FullImage'
 
-// import { speakersList } from '../utils/data'
+import { speakersList } from '../utils/data'
 import SeoTitle from '../components/SeoTitle'
 import JoinUs from '../sections/JoinUs'
 // import Schedule from '../sections/Schedule'
@@ -22,15 +22,15 @@ export default () => (
       <SeoTitle />
 
       <JoinUs />
-      {/*
-      <Speakers heading="Speakers coming soon" speakersList={speakersList} />
-      */}
+
+      <Speakers heading="Speakers" speakersList={speakersList} />
+
       <SpeakersComingSoon>
         <p>
           Hear from thought leaders in the GraphQL space including speakers from
           GitHub, Shopify, Amazon, TELUS, and more!
         </p>
-        <p> Speakers and schedule coming soon.</p>
+        <p> More speakers and full schedule coming soon.</p>
       </SpeakersComingSoon>
       <Nemo />
       <GetYourTickets />
