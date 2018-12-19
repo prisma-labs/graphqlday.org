@@ -8,23 +8,31 @@ import SpeakerStamp from '../components/SpeakerStamp'
 // Ivan Goncharov - GraphQL & OpenAPI/Swagger consultant at APIsGuru - https://github.com/IvanGoncharov
 
 export const speakersList = [
-  // {
-  //   imageUrl: '/static/speakers/speaker-1',
-  //   imageFormat: 'jpg',
-  //   name: 'Ken Wheeler',
-  //   bio: 'Director of OSS at FormidableLabs',
-  //   twitter: 'ken_wheeler',
-  //   github: 'kenwheeler',
-  //   renderStamp: () => <SpeakerStamp src="/static/speaks-at-ra.png" />,
-  // },
-  // {
-  //   imageUrl: '/static/speakers/speaker-9',
-  //   imageFormat: 'jpg',
-  //   name: 'Johannes Schickling',
-  //   bio: 'Founder & CEO at Graphcool',
-  //   twitter: '_schickling',
-  //   github: 'schickling',
-  // },
+  {
+    imageUrl: '/static/speakers/marc-andre',
+    imageFormat: 'jpg',
+    name: 'Marc-André Giroux',
+    bio: 'Github',
+    twitter: '__xuorig__',
+    github: 'xuorig',
+  },
+  {
+    imageUrl: '/static/speakers/scott',
+    imageFormat: 'jpg',
+    name: 'Scott Walkinshaw',
+    bio: 'Shopify',
+    twitter: 'swalkinshaw',
+    github: 'swalkinshaw',
+  },
+  {
+    imageUrl: '/static/speakers/chang',
+    imageFormat: 'png',
+    name: 'Chang Wang',
+    bio: 'Apollo',
+    twitter: 'cheapsteak',
+    github: 'cheapsteak',
+  },
+
   // {
   //   imageUrl: '/static/speakers/speaker-2',
   //   imageFormat: 'jpg',
