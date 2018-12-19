@@ -32,6 +32,13 @@ export const speakersList = [
     twitter: 'cheapsteak',
     github: 'cheapsteak',
   },
+  {
+    imageUrl: '/static/speakers/antoine',
+    imageFormat: 'jpg',
+    name: 'Antoine Genereux',
+    bio: 'AWS Canada',
+    twitter: 'antoinegenereux',
+  },
 
   // {
   //   imageUrl: '/static/speakers/speaker-2',
