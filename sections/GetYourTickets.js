@@ -15,7 +15,14 @@ import TicketsRow from 'components/TicketsRow'
 const onlyTicketData = [
   {
     price: '$100',
-    name: 'General Admission',
+    name: 'Conference Admission',
+    // desc: 'Access to the conference?',
+    disabled: false,
+    href: eventbriteLink,
+  },
+  {
+    price: 'Starts at $495',
+    name: 'Conference Training + Admission',
     // desc: 'Access to the conference?',
     disabled: false,
     href: eventbriteLink,
