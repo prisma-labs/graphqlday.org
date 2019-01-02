@@ -30,7 +30,7 @@ const Sponsors = () => (
             </a>
           </GridItem>
           <GridItem>
-            <a href="https://www.prisma.io/">
+            <a href="https://www.github.com/">
               <LogoImage src="/static/logos/github.png" alt="GitHub" />
             </a>
           </GridItem>
