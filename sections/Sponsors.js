@@ -21,17 +21,21 @@ const Sponsors = () => (
             </a>
           </GridItem>
         </Grid>
-
+        <br />
+        <SectionTitle>Silver Sponsor</SectionTitle>
+        <Grid>
+          <GridItem>
+            <a href="https://www.github.com/">
+              <LogoImage src="/static/logos/github.png" alt="GitHub" />
+            </a>
+          </GridItem>
+        </Grid>
+        <br />
         <SectionTitle>Community Partners</SectionTitle>
         <Grid>
           <GridItem>
             <a href="https://www.prisma.io/">
               <LogoImage src="/static/logos/prisma.png" alt="Prisma" />
-            </a>
-          </GridItem>
-          <GridItem>
-            <a href="https://www.github.com/">
-              <LogoImage src="/static/logos/github.png" alt="GitHub" />
             </a>
           </GridItem>
         </Grid>
