@@ -106,12 +106,18 @@ const LeftSide = styled.div`
   display: inline-block;
   padding: 24px;
   padding-top: 0;
+  @media (max-width: 800px) {
+    width: 100%;
+  }
 `
 const RightSide = styled.div`
   width: 50%;
   display: inline-block;
   padding: 24px;
   padding-top: 0;
+  @media (max-width: 800px) {
+    width: 100%;
+  }
 `
 
 const Container = styled.div`
