@@ -54,9 +54,9 @@ const JoinUsIntro = () => (
                       <Button
                         style={{ marginRight: 24, marginBottom: 24 }}
                         isLink={true}
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSet0Ipr_pObypzLYchHJiEOi-CQNy7r79WFTUzQGRlhdLGA9Q/viewform"
+                        href="https://www.eventbrite.com/e/graphql-day-toronto-tickets-53346817768"
                       >
-                        SUBMIT YOUR TALK
+                        TICKETS & TRAINING
                       </Button>
                       <Button isLink={true} href="mailto:hello@okgrow.com">
                         BECOME A SPONSOR

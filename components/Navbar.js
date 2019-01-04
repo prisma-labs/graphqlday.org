@@ -11,6 +11,12 @@ export default () => (
 
 // Nav Links
 const renderAnchorLinks = NavItem => [
+  <NavItem key="4" href="#speakers" isAnchor={true}>
+    Speakers
+  </NavItem>,
+  <NavItem key="4" href="#training" isAnchor={true}>
+    Training
+  </NavItem>,
   <NavItem key="4" href="#venue" isAnchor={true}>
     Venue
   </NavItem>,
@@ -20,6 +26,12 @@ const renderAnchorLinks = NavItem => [
 ]
 
 const renderNormalLinks = NavItem => [
+  <NavItem key="4" href="/#speakers">
+    Speakers
+  </NavItem>,
+  <NavItem key="4" href="/#training" isAnchor={true}>
+    Training
+  </NavItem>,
   <NavItem key="4" href="/#venue">
     Venue
   </NavItem>,
