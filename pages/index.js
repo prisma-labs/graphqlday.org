@@ -2,6 +2,7 @@ import { Provider } from 'unstated'
 import styled from 'styled-components'
 
 import Speakers from 'graphiconf/sections/Speakers'
+import withData from 'utils/withData'
 // import CoOrganizedBy from 'graphiconf/sections/CoOrganizedBy'
 // import FullImage from 'components/FullImage'
 
@@ -17,7 +18,7 @@ import Button from 'components/Button'
 import Sponsors from '../sections/Sponsors'
 import SubscribeModal from '../components/SubscribeModal'
 
-export default () => (
+export default withData(() => (
   <Provider>
     <div>
       <SeoTitle />
@@ -89,7 +90,7 @@ export default () => (
       </FooterContainer>
     </div>
   </Provider>
-)
+))
 
 const Center = styled.div`
   text-align: center;
