@@ -1,11 +1,4 @@
-import SpeakerStamp from '../components/SpeakerStamp'
-
-// Ken Wheeler - Director of OSS at FormidableLabs - https://twitter.com/ken_wheeler / https://github.com/kenwheeler
-// Kim Brandwijk - Author of SupergraphQL - https://github.com/kbrandwijk
-// Sara Vieira - Frontend Engineer at YLD.io - https://twitter.com/NikkitaFTW / https://github.com/SaraVieira
-// Martijn Walraven - Technical Product Manager at Apollo - https://twitter.com/martijnwalraven / https://github.com/martijnwalraven
-// Manjula Dabe - Senior Engineer at Bookmyshow - https://twitter.com/manjula_dube / https://github.com/manjula91
-// Ivan Goncharov - GraphQL & OpenAPI/Swagger consultant at APIsGuru - https://github.com/IvanGoncharov
+// import SpeakerStamp from '../components/SpeakerStamp'
 
 export const speakersList = [
   {
