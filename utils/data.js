@@ -63,4 +63,20 @@ export const speakersList = [
     bio: 'Director, Digital Platform Architecture, Air Canada',
     linkedin: 'ssubasinghe',
   },
+  {
+    imageUrl: '/static/speakers/erica',
+    imageFormat: 'jpg',
+    name: 'Erica Pisani',
+    bio: 'Full Stack Engineer, BenchSci',
+    twitter: 'ericapisani',
+  },
+  {
+    imageUrl: '/static/speakers/ryan',
+    imageFormat: 'jpg',
+    name: 'Ryan Chenkie',
+    bio:
+      'Full Stack JavaScript Developer, Trainer, and Google Developer Expert',
+    twitter: 'ryanchenkie',
+    github: 'chenkie',
+  },
 ]

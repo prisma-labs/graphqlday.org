@@ -9,7 +9,7 @@ import withData from 'utils/withData'
 import { speakersList } from '../utils/data'
 import SeoTitle from '../components/SeoTitle'
 import JoinUs from '../sections/JoinUs'
-// import Schedule from '../sections/Schedule'
+import Schedule from '../sections/Schedule'
 import GetYourTickets from '../sections/GetYourTickets'
 import Nemo from '../sections/Nemo'
 import Footer from '../sections/Footer'
@@ -24,9 +24,7 @@ export default withData(() => (
       <SeoTitle />
       <JoinUs />
       <Speakers heading="Speakers" speakersList={speakersList} />
-      <SpeakersComingSoon>
-        <p> More speakers and full schedule coming soon.</p>
-      </SpeakersComingSoon>
+      <Schedule />
       <Container>
         <TrainingContainer id="training">
           <h1>Training</h1>
