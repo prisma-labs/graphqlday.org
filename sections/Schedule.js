@@ -163,37 +163,15 @@ const scheduleList = [
     time: '4:22 PM',
   },
   {
-    title: 'TBD',
-    description: 'TBD',
-    images: [
-      {
-        src: '',
-        icon: true,
-      },
-    ],
-    time: '4:34 PM',
-  },
-  {
-    title: 'Closing remarks',
+    title: 'Closing remarks + Reception',
     description: '',
-    time: '4:45 PM',
+    time: '4:30 PM',
     images: [
       {
         src: '',
         icon: true,
       },
     ],
-  },
-  {
-    title: 'Reception',
-    description: '',
-    images: [
-      {
-        src: '',
-        icon: true,
-      },
-    ],
-    time: '4:50 PM',
   },
 ]
 
