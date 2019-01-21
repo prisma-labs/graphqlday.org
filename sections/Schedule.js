@@ -163,7 +163,7 @@ const scheduleList = [
     time: '4:22 PM',
   },
   {
-    title: 'Closing remarks + Reception',
+    title: 'Closing remarks & Reception',
     description: '',
     time: '4:30 PM',
     images: [
