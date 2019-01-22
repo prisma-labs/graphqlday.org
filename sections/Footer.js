@@ -14,12 +14,6 @@ export default () => (
     }) => (
       <Fragment>
         <Column>
-          <Link href="https://docs.google.com/forms/d/e/1FAIpQLSet0Ipr_pObypzLYchHJiEOi-CQNy7r79WFTUzQGRlhdLGA9Q/viewform">
-            <LinkItem href="https://docs.google.com/forms/d/e/1FAIpQLSet0Ipr_pObypzLYchHJiEOi-CQNy7r79WFTUzQGRlhdLGA9Q/viewform">
-              SUBMIT YOUR TALK
-            </LinkItem>
-          </Link>
-
           {isHomePage() ? (
             <AnchorLinkItem key="2" to="#venue">
               Venue

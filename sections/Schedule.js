@@ -183,7 +183,7 @@ const secondColumn = scheduleList.slice(half, listLength)
 export default () => (
   <Wrapper>
     <Container>
-      <SectionTitle>Schedule</SectionTitle>
+      <SectionTitle id="schedule">Schedule</SectionTitle>
       <ColumnsWrapper>
         <Column>
           {firstColumn.map((row, i) => <ScheduleRow key={i} {...row} />)}
