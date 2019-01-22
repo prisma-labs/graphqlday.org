@@ -132,7 +132,7 @@ const scheduleList = [
     time: '3:00 PM',
   },
   {
-    title: 'GraphQL caching',
+    title: 'Caching GraphQL APIs',
     description: 'Scott Walkinshaw',
     images: [
       {
