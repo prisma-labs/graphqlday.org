@@ -44,7 +44,11 @@ const JoinUsIntro = () => (
                   </MetaItem>
                   <MetaItem>
                     <MetaItemKey>Location</MetaItemKey>
-                    <MetaItemValue>TELUS Digital, Toronto</MetaItemValue>
+                    <MetaItemValue>
+                      <a href="https://www.google.com/maps/place/25+York+Street/@43.6434445,-79.3809378,15z/data=!4m5!3m4!1s0x0:0x32684a124bd8acaf!8m2!3d43.6434445!4d-79.3809378?ved=2ahUKEwjJjbOMm5HgAhUCyYMKHSTvBG8Q_BIwCnoECAMQCA&shorturl=1">
+                        TELUS Digital, Toronto
+                      </a>
+                    </MetaItemValue>
                   </MetaItem>
                 </Meta>
 
