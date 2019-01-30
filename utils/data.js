@@ -79,4 +79,20 @@ export const speakersList = [
     twitter: 'ryanchenkie',
     github: 'chenkie',
   },
+  {
+    imageUrl: '/static/speakers/raj',
+    imageFormat: 'jpg',
+    name: 'Raj Singh',
+    bio: 'CEO & Co-founder, Novvum',
+    twitter: 'RajInWonderland',
+    github: 'RajInWonderland',
+  },
+  {
+    imageUrl: '/static/speakers/rohit',
+    imageFormat: 'jpg',
+    name: 'Rohit Ravikoti',
+    bio: 'CTO & Co-founder, Novvum',
+    twitter: 'rovvum',
+    github: 'rohit-ravikoti',
+  },
 ]

@@ -39,7 +39,72 @@ const scheduleList = [
         ],
       },
     ],
-    time: '9:05 AM',
+    time: '9:10 AM',
+  },
+  {
+    title: 'Mocking and automocking for tests and storybooks',
+    description: 'Chang Wang',
+    images: [
+      {
+        src: ['/static/speakers/chang.png', '/static/speakers/chang@2x.png'],
+      },
+    ],
+    time: '9:45 AM',
+  },
+  {
+    title: 'Managing TypeScript and GraphQL types in Node',
+    description: 'Erica Pisani',
+    images: [
+      {
+        src: ['/static/speakers/erica.jpg', '/static/speakers/erica@2x.jpg'],
+      },
+    ],
+    time: '10:20 AM',
+  },
+  {
+    title: 'Break',
+    description: '',
+    images: [
+      {
+        src: '/static/coffee.svg',
+        icon: true,
+      },
+    ],
+    time: '10:30 AM',
+  },
+  {
+    title: 'GraphQL Caching',
+    description: 'Scott Walkinshaw',
+    images: [
+      {
+        src: ['/static/speakers/scott.jpg', '/static/speakers/scott@2x.jpg'],
+      },
+    ],
+    time: '11:00 AM',
+  },
+  {
+    title: 'Support unlimited customer experiences with GraphQL',
+    description: 'Andrew Kumar & Bill Li',
+    images: [
+      {
+        src: [
+          '/static/speakers/andrew-bill.jpg',
+          '/static/speakers/andrew-bill@2x.jpg',
+        ],
+      },
+    ],
+    time: '11:35 AM',
+  },
+  {
+    title: 'Lunch',
+    description: '',
+    images: [
+      {
+        src: '/static/cutlery.svg',
+        icon: true,
+      },
+    ],
+    time: '12:00 AM',
   },
   {
     title: 'Building serverless applications with AWS AppSync',
@@ -52,28 +117,7 @@ const scheduleList = [
         ],
       },
     ],
-    time: '9:50 AM',
-  },
-  {
-    title: 'Break',
-    description: '',
-    images: [
-      {
-        src: '/static/coffee.svg',
-        icon: true,
-      },
-    ],
-    time: '10:35 AM',
-  },
-  {
-    title: 'Mocking and automocking for tests and storybooks',
-    description: 'Chang Wang',
-    images: [
-      {
-        src: ['/static/speakers/chang.png', '/static/speakers/chang@2x.png'],
-      },
-    ],
-    time: '11:00',
+    time: '1:00 PM',
   },
   {
     title: 'Teaching GraphQL  —  lessons from a beginner',
@@ -83,73 +127,7 @@ const scheduleList = [
         src: ['/static/speakers/leanne.jpg', '/static/speakers/leanne@2x.jpg'],
       },
     ],
-    time: '11:45 AM',
-  },
-  {
-    title: 'Lunch',
-    description: '',
-    images: [
-      {
-        src: '/static/cutlery.svg',
-        icon: true,
-      },
-    ],
-    time: '12:30 AM',
-  },
-  {
-    title: 'Supercharge your schemas with custom directives',
-    description: 'Ryan Chenkie',
-    images: [
-      {
-        src: ['/static/speakers/ryan.jpg', '/static/speakers/ryan@2x.jpg'],
-      },
-    ],
-    time: '1:30 PM',
-  },
-  {
-    title:
-      'Build for unlimited and always changing customer experiences with GraphQL',
-    description: 'Andrew Kumar & Bill Li',
-    images: [
-      {
-        src: [
-          '/static/speakers/andrew-bill.jpg',
-          '/static/speakers/andrew-bill@2x.jpg',
-        ],
-      },
-    ],
-    time: '2:15 PM',
-  },
-  {
-    title: 'Break',
-    description: '',
-    images: [
-      {
-        src: '/static/coffee.svg',
-        icon: true,
-      },
-    ],
-    time: '3:00 PM',
-  },
-  {
-    title: 'Caching GraphQL APIs',
-    description: 'Scott Walkinshaw',
-    images: [
-      {
-        src: ['/static/speakers/scott.jpg', '/static/speakers/scott@2x.jpg'],
-      },
-    ],
-    time: '3:25 PM',
-  },
-  {
-    title: 'Managing TypeScript and GraphQL types in Node',
-    description: 'Erica Pisani',
-    images: [
-      {
-        src: ['/static/speakers/erica.jpg', '/static/speakers/erica@2x.jpg'],
-      },
-    ],
-    time: '4:10 PM',
+    time: '1:35 AM',
   },
   {
     title:
@@ -160,12 +138,47 @@ const scheduleList = [
         src: ['/static/speakers/suresh.jpg', '/static/speakers/suresh@2x.jpg'],
       },
     ],
-    time: '4:22 PM',
+    time: '2:10 PM',
   },
   {
-    title: 'Closing remarks & Reception',
+    title: 'Break',
     description: '',
-    time: '4:30 PM',
+    images: [
+      {
+        src: '/static/coffee.svg',
+        icon: true,
+      },
+    ],
+    time: '2:20 PM',
+  },
+  {
+    title: 'Supercharge your schemas with custom directives',
+    description: 'Ryan Chenkie',
+    images: [
+      {
+        src: ['/static/speakers/ryan.jpg', '/static/speakers/ryan@2x.jpg'],
+      },
+    ],
+    time: '3:00 PM',
+  },
+  {
+    title: 'From hell to GraphQL',
+    description: 'Raj Singh and Rohit Ravikoti',
+    images: [
+      {
+        src: [
+          '/static/speakers/rohit-raj.jpg',
+          '/static/speakers/rohit-raj@2x.jpg',
+        ],
+      },
+    ],
+    time: '3:00 PM',
+  },
+
+  {
+    title: 'Closing remarks',
+    description: '',
+    time: '4:00 PM',
     images: [
       {
         src: '',
