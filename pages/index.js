@@ -1,8 +1,13 @@
 import { Provider } from 'unstated'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
+import rem from 'utils/rem'
 
 import Speakers from 'graphiconf/sections/Speakers'
+import { upperCaseHeading } from 'utils/mixins'
 import withData from 'utils/withData'
+import { specialRed } from 'utils/colors'
+import lighten from 'polished/lib/color/lighten'
+import { mobile } from 'utils/media'
 // import CoOrganizedBy from 'graphiconf/sections/CoOrganizedBy'
 // import FullImage from 'components/FullImage'
 
@@ -31,6 +36,20 @@ export default withData(() => (
           <Column>
             <LeftSide>
               <h3>GraphQL Fundamentals Training</h3>
+              <Meta>
+                <MetaItem>
+                  <MetaItemValue>26th February, 2019</MetaItemValue>
+                </MetaItem>
+                <MetaItem>
+                  <MetaItemValue>
+                    <a href="https://www.google.com/maps/place/Cisco+Toronto+Innovation+Centre/@43.6411095,-79.3786642,15z/data=!4m2!3m1!1s0x0:0x21333c0ef93af51c?ved=2ahUKEwicw4ao9pXgAhXqzIMKHZk0A0kQ_BIwF3oECAMQCA">
+                      Cisco Toronto Innovation Centre
+                    </a>
+                    <br />
+                    29th floor, Algonquin Room
+                  </MetaItemValue>
+                </MetaItem>
+              </Meta>
               <ul>
                 <li>Why use GraphQL?</li>
                 <li>GraphQL syntax</li>
@@ -49,8 +68,21 @@ export default withData(() => (
             </LeftSide>
             <RightSide>
               <h3>Advanced GraphQL Training </h3>
+              <Meta>
+                <MetaItem>
+                  <MetaItemValue>27th February, 2019</MetaItemValue>
+                </MetaItem>
+                <MetaItem>
+                  <MetaItemValue>
+                    <a href="https://www.google.com/maps/place/Cisco+Toronto+Innovation+Centre/@43.6411095,-79.3786642,15z/data=!4m2!3m1!1s0x0:0x21333c0ef93af51c?ved=2ahUKEwicw4ao9pXgAhXqzIMKHZk0A0kQ_BIwF3oECAMQCA">
+                      Cisco Toronto Innovation Centre
+                    </a>
+                    <br />
+                    29th floor, Algonquin Room
+                  </MetaItemValue>
+                </MetaItem>
+              </Meta>
               <ul>
-                <li>Server-side rendering & best practices</li>
                 <li>
                   GraphQL Subscriptions Schema stitching Caching and batching
                 </li>
@@ -62,6 +94,9 @@ export default withData(() => (
                   with update API Optimistic UI in response to a mutation
                   GraphQL in production with Apollo Engine
                 </li>
+                <li>Improving query performance with caching</li>
+                <li>Implementing GraphQL custom directives</li>
+                <li>Customized error handling</li>
               </ul>
             </RightSide>
           </Column>
@@ -95,6 +130,7 @@ const Center = styled.div`
 `
 
 const Column = styled.div`
+  display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
@@ -149,6 +185,29 @@ const FooterContainer = styled.div`
   div[class*=' Footer__End'] {
     display: none;
   }
+`
+
+const Meta = styled.div`
+  xmargin-top: ${rem(40)};
+  margin-bottom: 0;
+`
+
+const MetaItem = styled.div`
+  padding-right: ${rem(70)};
+  display: inline-block;
+
+  ${mobile(css`
+    width: 50%;
+    padding-right: 0;
+  `)};
+`
+
+const MetaItemKey = styled.div`
+  ${upperCaseHeading};
+`
+
+const MetaItemValue = styled.div`
+  color: ${lighten(0.2, specialRed)};
 `
 
 const SpeakersComingSoon = styled.div`
