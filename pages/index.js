@@ -53,17 +53,12 @@ export default withData(() => (
               <ul>
                 <li>Why use GraphQL?</li>
                 <li>GraphQL syntax</li>
-                <li>
-                  Introduction to Apollo Client Sending queries on the client
-                </li>
-                <li>
-                  Triggering mutations on the client Introduction to Apollo
-                  Server
-                </li>
-                <li>
-                  Writing type definitions Mapping types to data with resolver
-                  functions
-                </li>
+                <li>Introduction to Apollo Client</li>
+                <li>Sending queries on the client</li>
+                <li>Triggering mutations on the client</li>
+                <li>Introduction to Apollo Server</li>
+                <li>Writing type definitions</li>
+                <li>Mapping types to data with resolver functions</li>
               </ul>
             </LeftSide>
             <RightSide>
@@ -83,17 +78,12 @@ export default withData(() => (
                 </MetaItem>
               </Meta>
               <ul>
-                <li>
-                  GraphQL Subscriptions Schema stitching Caching and batching
-                </li>
-                <li>
-                  GraphQL operations with Dataloader Imperative client cache
-                  updates
-                </li>
-                <li>
-                  with update API Optimistic UI in response to a mutation
-                  GraphQL in production with Apollo Engine
-                </li>
+                <li>GraphQL Subscriptions</li>
+                <li>Schema stitching</li>
+                <li>Caching and batching GraphQL operations with Dataloader</li>
+                <li>Imperative client cache updates with update API</li>
+                <li>Optimistic UI in response to a mutation</li>
+                <li>GraphQL in production with Apollo Engine</li>
                 <li>Improving query performance with caching</li>
                 <li>Implementing GraphQL custom directives</li>
                 <li>Customized error handling</li>
