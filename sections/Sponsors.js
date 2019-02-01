@@ -38,6 +38,11 @@ const Sponsors = () => (
               <LogoImage src="/static/logos/prisma.png" alt="Prisma" />
             </a>
           </GridItem>
+          <GridItem>
+            <a href="https://www.honeypot.io/">
+              <LogoImage src="/static/logos/honeypot.png" alt="Honeypot" />
+            </a>
+          </GridItem>
         </Grid>
       </SectionContent>
     </Container>
