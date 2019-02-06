@@ -176,7 +176,7 @@ const scheduleList = [
   },
 
   {
-    title: 'Closing remarks',
+    title: 'Closing remarks & reception',
     description: '',
     time: '4:00PM - 6:00PM',
     images: [
