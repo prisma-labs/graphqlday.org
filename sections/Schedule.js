@@ -15,7 +15,7 @@ const scheduleList = [
         icon: true,
       },
     ],
-    time: '08:00 AM - 09:00 AM',
+    time: '8:00AM - 9:00AM',
   },
   {
     title: 'Opening Remarks',
@@ -26,7 +26,7 @@ const scheduleList = [
         icon: true,
       },
     ],
-    time: '9:00 AM',
+    time: '9:00AM',
   },
   {
     title: 'So you want to distribute your GraphQL schema?',
@@ -39,7 +39,7 @@ const scheduleList = [
         ],
       },
     ],
-    time: '9:10 AM',
+    time: '9:10AM',
   },
   {
     title: 'Mocking and automocking for tests and storybooks',
@@ -49,7 +49,7 @@ const scheduleList = [
         src: ['/static/speakers/chang.png', '/static/speakers/chang@2x.png'],
       },
     ],
-    time: '9:45 AM',
+    time: '9:45AM',
   },
   {
     title: 'Managing TypeScript and GraphQL types in Node',
@@ -59,7 +59,7 @@ const scheduleList = [
         src: ['/static/speakers/erica.jpg', '/static/speakers/erica@2x.jpg'],
       },
     ],
-    time: '10:20 AM',
+    time: '10:20AM',
   },
   {
     title: 'Break',
@@ -70,7 +70,7 @@ const scheduleList = [
         icon: true,
       },
     ],
-    time: '10:30 AM',
+    time: '10:30AM',
   },
   {
     title: 'GraphQL Caching',
@@ -80,7 +80,7 @@ const scheduleList = [
         src: ['/static/speakers/scott.jpg', '/static/speakers/scott@2x.jpg'],
       },
     ],
-    time: '11:00 AM',
+    time: '11:00AM',
   },
   {
     title: 'Support unlimited customer experiences with GraphQL',
@@ -93,7 +93,7 @@ const scheduleList = [
         ],
       },
     ],
-    time: '11:35 AM',
+    time: '11:35AM',
   },
   {
     title: 'Lunch',
@@ -104,7 +104,7 @@ const scheduleList = [
         icon: true,
       },
     ],
-    time: '12:00 AM',
+    time: '12:00PM',
   },
   {
     title: 'Building serverless applications with AWS AppSync',
@@ -117,7 +117,7 @@ const scheduleList = [
         ],
       },
     ],
-    time: '1:00 PM',
+    time: '1:00PM',
   },
   {
     title: 'Teaching GraphQL  —  lessons from a beginner',
@@ -127,7 +127,7 @@ const scheduleList = [
         src: ['/static/speakers/leanne.jpg', '/static/speakers/leanne@2x.jpg'],
       },
     ],
-    time: '1:35 AM',
+    time: '1:35PM',
   },
   {
     title:
@@ -138,7 +138,7 @@ const scheduleList = [
         src: ['/static/speakers/suresh.jpg', '/static/speakers/suresh@2x.jpg'],
       },
     ],
-    time: '2:10 PM',
+    time: '2:10PM',
   },
   {
     title: 'Break',
@@ -149,7 +149,7 @@ const scheduleList = [
         icon: true,
       },
     ],
-    time: '2:20 PM',
+    time: '2:20PM',
   },
   {
     title: 'Supercharge your schemas with custom directives',
@@ -159,7 +159,7 @@ const scheduleList = [
         src: ['/static/speakers/ryan.jpg', '/static/speakers/ryan@2x.jpg'],
       },
     ],
-    time: '3:00 PM',
+    time: '3:00PM',
   },
   {
     title: 'From hell to GraphQL',
@@ -172,13 +172,13 @@ const scheduleList = [
         ],
       },
     ],
-    time: '3:00 PM',
+    time: '3:00PM',
   },
 
   {
     title: 'Closing remarks',
     description: '',
-    time: '4:00 PM',
+    time: '4:00PM - 6:00PM',
     images: [
       {
         src: '',
