@@ -177,7 +177,7 @@ const scheduleList = [
 
   {
     title: 'Closing remarks & reception',
-    description: '',
+    description: 'Time to mingle and enjoy light snacks and refreshments!',
     time: '4:00PM - 6:00PM',
     images: [
       {
@@ -197,6 +197,10 @@ export default () => (
   <Wrapper>
     <Container>
       <SectionTitle id="schedule">Schedule</SectionTitle>
+      <p style={{ marginTop: '-10px' }}>
+        Optional GraphQL Training 9 AM - 4 PM Tuesday and Wednesday
+      </p>
+
       <ColumnsWrapper>
         <Column>
           {firstColumn.map((row, i) => <ScheduleRow key={i} {...row} />)}
