@@ -172,7 +172,7 @@ const scheduleList = [
         ],
       },
     ],
-    time: '3:00PM',
+    time: '3:30PM',
   },
 
   {

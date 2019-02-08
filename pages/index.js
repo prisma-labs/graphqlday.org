@@ -98,6 +98,9 @@ export default withData(() => (
             >
               TRAINING TICKETS
             </Button>
+            <p style={{ marginTop: '-10px' }}>
+              Optional GraphQL Training 9 AM - 5 PM Tuesday and Wednesday
+            </p>
           </Center>
         </TrainingContainer>
       </Container>

@@ -29,6 +29,11 @@ const Sponsors = () => (
               <LogoImage src="/static/logos/github.png" alt="GitHub" />
             </a>
           </GridItem>
+          <GridItem>
+            <a href="https://www.shopify.com/">
+              <LogoImage src="/static/logos/shopify.png" alt="GitHub" />
+            </a>
+          </GridItem>
         </Grid>
         <br />
         <SectionTitle>Community Partners</SectionTitle>
