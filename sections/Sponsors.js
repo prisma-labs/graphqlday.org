@@ -22,7 +22,7 @@ const Sponsors = () => (
           </GridItem>
         </Grid>
         <br />
-        <SectionTitle>Silver Sponsor</SectionTitle>
+        <SectionTitle>Silver Sponsors</SectionTitle>
         <Grid>
           <GridItem>
             <a href="https://www.github.com/">
