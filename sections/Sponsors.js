@@ -31,7 +31,16 @@ const Sponsors = () => (
           </GridItem>
           <GridItem>
             <a href="https://www.shopify.com/">
-              <LogoImage src="/static/logos/shopify.png" alt="GitHub" />
+              <LogoImage src="/static/logos/shopify.png" alt="Shopify" />
+            </a>
+          </GridItem>
+        </Grid>
+        <br />
+        <SectionTitle>Bronze Sponsors</SectionTitle>
+        <Grid>
+          <GridItem>
+            <a href="https://www.apollographql.com/">
+              <LogoImage src="/static/logos/apollo.png" alt="Apollo" />
             </a>
           </GridItem>
         </Grid>
