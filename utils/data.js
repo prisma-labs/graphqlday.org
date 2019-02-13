@@ -29,8 +29,15 @@ export const speakersList = [
     imageUrl: '/static/speakers/antoine',
     imageFormat: 'jpg',
     name: 'Antoine Genereux',
-    bio: 'AWS Canada',
+    bio: 'Solutions Architect, AWS Canada',
     twitter: 'antoinegenereux',
+  },
+  {
+    imageUrl: '/static/speakers/jane',
+    imageFormat: 'jpg',
+    name: 'Jane Shen',
+    bio: 'Cloud Application Architect, AWS Canada',
+    twitter: 'j_shen',
   },
   {
     imageUrl: '/static/speakers/andrew',
