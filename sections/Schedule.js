@@ -108,12 +108,12 @@ const scheduleList = [
   },
   {
     title: 'Building serverless applications with AWS AppSync',
-    description: 'Antoine Genereux',
+    description: 'Antoine Genereux and Jane Shen',
     images: [
       {
         src: [
-          '/static/speakers/antoine.jpg',
-          '/static/speakers/antoine@2x.jpg',
+          '/static/speakers/antoine-jane.jpg',
+          '/static/speakers/antoine-jane@2x.jpg',
         ],
       },
     ],
