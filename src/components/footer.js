@@ -2,7 +2,41 @@ import React from "react"
 import styled from "styled-components"
 // import { Link } from "gatsby"
 
-const Footer = styled.footer``
+import logo from "../pages/static/logo-graphql.svg"
+import organizers from "../pages/static/organizers-logo-vertical.svg"
+import twitter from "../pages/static/twitter.png"
+import github from "../pages/static/github.png"
+import mail from "../pages/static/mail.png"
+
+const Footer = styled.footer`
+  border-top: 1px solid #f1f1f1;
+`
+
+const LinkSection = styled.div`
+  padding: 24px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .links {
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 48px;
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: #aaacaa;
+    font-size: 16px;
+    padding-bottom: 8px;
+  }
+
+  .icon {
+    padding-right: 8px;
+  }
+`
 
 const PinkFooter = styled.div`
   background: #db3f74;
@@ -79,6 +113,61 @@ const Form = styled.form`
 
 const FooterSection = ({ children }) => (
   <Footer>
+    <LinkSection>
+      <img src={logo} alt="GraphQL Day Bodensee logo" />
+      <div className="links">
+        <div>
+          <a href="" alt="">
+            Attend
+          </a>
+
+          <a href="" alt="">
+            Speakers
+          </a>
+
+          <a href="" alt="">
+            Sponsors
+          </a>
+
+          <a href="" alt="">
+            Team
+          </a>
+        </div>
+        <div>
+          <a href="" alt="">
+            API
+          </a>
+
+          <a href="" alt="">
+            Code of Conduct
+          </a>
+
+          <a href="" alt="">
+            Imprint
+          </a>
+        </div>
+        <div>
+          <a href="" alt="">
+            <img src={twitter} alt="Twitter icon" className="icon" />
+            Twitter
+          </a>
+
+          <a href="" alt="">
+            <img src={github} alt="Github icon" className="icon" />
+            Github
+          </a>
+
+          <a href="" alt="">
+            <img src={mail} alt="Mail icon" className="icon" />
+            Contact Us!
+          </a>
+        </div>
+      </div>
+      <img
+        src={organizers}
+        alt="Honeypot, Prisma, and GraphCMS are the organizers of GraphQL Day Bodensee"
+      />
+    </LinkSection>
     <PinkFooter>
       <div className="topper" />
       <div className="content">
