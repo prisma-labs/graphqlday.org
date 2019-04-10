@@ -54,9 +54,9 @@ const Header = ({ children }) => (
   <>
     <TopBar src={topBar} alt="" />
     <Nav>
-      <Logo to="/" alt="GraphQL Conf Bondsee Page">
-        <img src={logo} alt="GraphQL Conf Bondsee Logo" className="logo" />
-        <h3>GraphQL Day Bondsee</h3>
+      <Logo to="/" alt="GraphQL Conf Bodensee Page">
+        <img src={logo} alt="GraphQL Conf Bodensee Logo" className="logo" />
+        <h3>GraphQL Day Bodensee</h3>
       </Logo>
       <NavLinks align="right">
         <Link to="/#upcoming-events" alt="" className="navLink">
