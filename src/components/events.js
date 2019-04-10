@@ -35,7 +35,9 @@ const Wrapper = styled.section`
 
 const EventSection = ({ children }) => (
   <Wrapper>
-    <h2 className="pink">Upcoming events</h2>
+    <h2 className="pink" id="upcoming-events">
+      Upcoming events
+    </h2>
     <FutureCard
       image={berlin}
       altText="GraphQL Conf Logo"

@@ -2,7 +2,9 @@ import React from "react"
 import styled from "styled-components"
 // import { Link } from "gatsby"
 
-const Footer = styled.footer`
+const Footer = styled.footer``
+
+const PinkFooter = styled.div`
   background: #db3f74;
   bottom: 0;
   width: 100%;
@@ -77,17 +79,19 @@ const Form = styled.form`
 
 const FooterSection = ({ children }) => (
   <Footer>
-    <div className="topper" />
-    <div className="content">
-      <div className="text">
-        <h3>Don’t want to miss out? </h3>
-        <p>Sign up for our newsletter</p>
+    <PinkFooter>
+      <div className="topper" />
+      <div className="content">
+        <div className="text">
+          <h3>Don’t want to miss out? </h3>
+          <p>Sign up for our newsletter</p>
+        </div>
+        <Form>
+          <input type="email" placeholder="Add your email" />
+          <button type="submit">Sign up</button>
+        </Form>
       </div>
-      <Form>
-        <input type="email" placeholder="Add your email" />
-        <button type="submit">Sign up</button>
-      </Form>
-    </div>
+    </PinkFooter>
   </Footer>
 )
 

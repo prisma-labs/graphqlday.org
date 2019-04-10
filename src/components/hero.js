@@ -38,6 +38,7 @@ const Wrapper = styled.section`
     margin: 0 auto -50px auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: relative;
     padding: 32px;
   }
@@ -59,6 +60,7 @@ const Wrapper = styled.section`
     background: #db3f74;
     color: white;
     border: none;
+    margin-right: 16px;
   }
 
   .light {
@@ -70,6 +72,16 @@ const Wrapper = styled.section`
   a {
     text-decoration: none;
   }
+
+  img {
+    padding-right: 16px;
+  }
+
+  .left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 `
 
 const Hero = ({ children }) => (
@@ -78,17 +90,21 @@ const Hero = ({ children }) => (
     <h2>We Think you Should Join our Global GraphQL Day Community!</h2>
 
     <div className="card">
-      <img src={germany} alt="germany graphql conference" />
-      <div className="textGroup">
-        <h3>GraphQL Day Bodensee</h3>
-        <p>6th September, 2019</p>
+      <div className="left">
+        <img src={germany} alt="germany graphql conference" />
+        <div className="textGroup">
+          <h3>GraphQL Day Bodensee</h3>
+          <p>6th September, 2019</p>
+        </div>
       </div>
-      <a href="" alt="Get Ticket for GraphQL day Bodensee">
-        <button className="dark">Get tickets</button>
-      </a>
-      <a href="" alt="More information about GraphQL day Bodensee">
-        <button className="light">More info</button>
-      </a>
+      <div className="buttons">
+        <a href="" alt="Get Ticket for GraphQL day Bodensee">
+          <button className="dark">Get tickets</button>
+        </a>
+        <a href="" alt="More information about GraphQL day Bodensee">
+          <button className="light">More info</button>
+        </a>
+      </div>
     </div>
 
     <div className="images" />
