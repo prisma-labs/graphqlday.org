@@ -6,7 +6,6 @@ import headerImages from "../pages/static/header-pictures@2x.png"
 
 const Wrapper = styled.section`
   text-align: center;
-  margin-bottom: 144px;
 
   h1 {
     margin-top: 64px;
@@ -20,13 +19,14 @@ const Wrapper = styled.section`
     max-width: 545px;
     margin: 0 auto;
     line-height: 1.4;
-    margin-bottom: 144px;
+    margin-bottom: 96px;
   }
 
   .images {
     background: url(${headerImages});
     background-size: cover;
-    height: 347px;
+    height: 360px;
+    margin-bottom: 144px;
   }
 
   .card {
@@ -35,10 +35,40 @@ const Wrapper = styled.section`
     box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.078493),
       0px 2px 4px rgba(0, 0, 0, 0.217929);
     max-width: 830px;
-    margin: 0 auto;
+    margin: 0 auto -50px auto;
     display: flex;
     justify-content: space-between;
     position: relative;
+    padding: 32px;
+  }
+
+  .textGroup {
+    text-align: left;
+    width: 330px;
+  }
+
+  button {
+    padding: 16px 32px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .dark {
+    background: #db3f74;
+    color: white;
+    border: none;
+  }
+
+  .light {
+    background: white;
+    color: #db3f74;
+    border: 2px solid #db3f74;
+  }
+
+  a {
+    text-decoration: none;
   }
 `
 
@@ -47,15 +77,21 @@ const Hero = ({ children }) => (
     <h1>Hello!</h1>
     <h2>We Think you Should Join our Global GraphQL Day Community!</h2>
 
-    <div className="images">
-      <div className="card">
-        <img src={germany} />
+    <div className="card">
+      <img src={germany} alt="germany graphql conference" />
+      <div className="textGroup">
         <h3>GraphQL Day Bodensee</h3>
         <p>6th September, 2019</p>
-        <button>Get tickets</button>
-        <button>More info</button>
       </div>
+      <a href="" alt="Get Ticket for GraphQL day Bodensee">
+        <button className="dark">Get tickets</button>
+      </a>
+      <a href="" alt="More information about GraphQL day Bodensee">
+        <button className="light">More info</button>
+      </a>
     </div>
+
+    <div className="images" />
   </Wrapper>
 )
 

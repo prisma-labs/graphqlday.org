@@ -27,7 +27,7 @@ const NavLinks = styled.div`
   .navLink {
     text-decoration: none;
     color: #000000;
-    margin-right: 1em;
+    margin-right: 2em;
   }
 `
 

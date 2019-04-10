@@ -4,11 +4,9 @@ import styled from "styled-components"
 
 const Footer = styled.footer`
   background: #db3f74;
-  position: absolute;
   bottom: 0;
   width: 100%;
   padding: 0 0 24px 0;
-  color: white;
 
   .topper {
     background: #f56199;
@@ -36,11 +34,13 @@ const Footer = styled.footer`
     font-size: 24px;
     margin-bottom: 8px;
     font-weight: 600;
+    color: white;
   }
 
   p {
     opacity: 0.75;
     font-weight: 400;
+    color: white;
   }
 `
 
