@@ -89,7 +89,7 @@ const Form = styled.form`
     border-radius: 5px 0 0 5px;
     border: none;
     padding: 16px 0 16px 16px;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 1);
     padding-left: 16px;
     overflow: hidden;
     outline: none;
