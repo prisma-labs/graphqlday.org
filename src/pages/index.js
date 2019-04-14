@@ -10,7 +10,7 @@ import Events from "../components/events"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="GraphQL Conf - Bondsee" />
+    <SEO title="GraphQL Conf - Bodensee" />
     <div>
       <Hero />
       <Community />
