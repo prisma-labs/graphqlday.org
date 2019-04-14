@@ -147,17 +147,17 @@ const FooterSection = ({ children }) => (
           </a>
         </div>
         <div>
-          <a href="" alt="">
+          <a
+            href="https://twitter.com/graphcms"
+            alt="GraphCMS Twitter"
+            target="blank"
+            rel=""
+          >
             <img src={twitter} alt="Twitter icon" className="icon" />
             Twitter
           </a>
 
-          <a href="" alt="">
-            <img src={github} alt="Github icon" className="icon" />
-            Github
-          </a>
-
-          <a href="" alt="">
+          <a href="mailto:hello@graphcms.com" alt="GraphCMS email">
             <img src={mail} alt="Mail icon" className="icon" />
             Contact Us!
           </a>
