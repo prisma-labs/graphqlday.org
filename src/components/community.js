@@ -38,6 +38,14 @@ const Wrapper = styled.section`
     line-height: 2;
     margin-bottom: 32px;
   }
+
+  a {
+    transition: all 0.5s;
+  }
+
+  a:hover {
+    transform: translate(0px, -5px);
+  }
 `
 
 const CommunitySection = ({ children }) => (
@@ -50,19 +58,25 @@ const CommunitySection = ({ children }) => (
     </p>
     <Row className="group">
       <Column lg={3} md={12} className="col">
-        <img src={honeypot} alt="honeypot at graphql day bodensee" />
+        <a href="https://www.honeypot.io" alt="Honeypot's website">
+          <img src={honeypot} alt="honeypot at graphql day bodensee" />
+        </a>
       </Column>
       <Column lg={1} md={12} className="col">
         <img src={x} alt="collaboration symbol" />
       </Column>
       <Column lg={4} md={12} className="col">
-        <img src={gcms} alt="graphcms at graphql day bodensee" />
+        <a href="https://graphcms.com/" alt="GraphCMS's Website">
+          <img src={gcms} alt="graphcms at graphql day bodensee" />
+        </a>
       </Column>
       <Column lg={1} md={12} className="col">
         <img src={x} alt="collaboration symbol" />
       </Column>
       <Column lg={3} md={12} className="col">
-        <img src={prisma} alt="prisma at graphql day bodensee" />
+        <a href="https://www.prisma.io" alt="Prisma's website">
+          <img src={prisma} alt="prisma at graphql day bodensee" />
+        </a>
       </Column>
     </Row>
   </Wrapper>

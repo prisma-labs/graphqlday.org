@@ -60,6 +60,12 @@ const Wrapper = styled.section`
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
+    transition: all 0.5s;
+  }
+
+  button:hover {
+    box-shadow: 0 16px 32px 0 rgba(62, 57, 107, 0.18), 0 0 0 transparent;
+    transform: translate(0px, -5px);
   }
 
   .dark {

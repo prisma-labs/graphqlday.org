@@ -44,6 +44,19 @@ const LinkSection = styled(Row)`
     display: flex;
     margin: 0 auto;
     padding: 8px;
+    height: 25px;
+    transition: all 0.5s;
+
+    :hover {
+      transform: translate(0px, -3px);
+    }
+  }
+
+  .x {
+    height: 8px;
+    display: flex;
+    margin: 0 auto;
+    padding: 8px;
   }
 
   .logo {
@@ -179,23 +192,29 @@ const FooterSection = ({ children }) => (
         </Link>
       </Column>
       <Column lg={2} md={12}>
-        <img
-          src={honeypot}
-          alt="honeypot at graphql day bodensee"
-          className="col"
-        />
-        <img src={x} alt="collaboration symbol" className="col" />
-        <img
-          src={gcms}
-          alt="graphcms at graphql day bodensee"
-          className="col"
-        />
-        <img src={x} alt="collaboration symbol" className="col" />
-        <img
-          src={prisma}
-          alt="prisma at graphql day bodensee"
-          className="col"
-        />
+        <a href="https://www.honeypot.io" alt="Honeypot's website">
+          <img
+            src={honeypot}
+            alt="honeypot at graphql day bodensee"
+            className="col"
+          />
+        </a>
+        <img src={x} alt="collaboration symbol" className="x" />
+        <a href="https://graphcms.com/" alt="GraphCMS's Website">
+          <img
+            src={gcms}
+            alt="graphcms at graphql day bodensee"
+            className="col"
+          />
+        </a>
+        <img src={x} alt="collaboration symbol" className="x" />
+        <a href="https://www.prisma.io" alt="Prisma's website">
+          <img
+            src={prisma}
+            alt="prisma at graphql day bodensee"
+            className="col"
+          />
+        </a>
       </Column>
     </LinkSection>
     <PinkFooter>

@@ -13,6 +13,12 @@ const Card = styled.div`
   align-items: center;
   padding: 16px 24px;
   margin-bottom: 16px;
+  transition: all 0.5s;
+
+  :hover {
+    box-shadow: 0 10px 40px 0 rgba(97, 4, 95, 0.07),
+      0 2px 9px 0 rgba(62, 57, 107, 0.06);
+  }
 
   h3 {
     font-size: 16px;
