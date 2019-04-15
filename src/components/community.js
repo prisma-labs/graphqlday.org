@@ -1,14 +1,30 @@
 import React from "react"
 import styled from "styled-components"
+import { Row, Column } from "hedron"
 // import { Link } from "gatsby"
 
-import organizers from "../pages/static/organizers-logo.svg"
+import honeypot from "../pages/static/Honeypot.svg"
+import prisma from "../pages/static/prisma.svg"
+import gcms from "../pages/static/gcms.svg"
+import x from "../pages/static/xMark.svg"
 
 const Wrapper = styled.section`
   max-width: 520px;
   padding: 0 2em;
   margin: 0 auto 64px auto;
   text-align: center;
+
+  .group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .col {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+  }
 
   h2 {
     font-size: 32px;
@@ -32,10 +48,23 @@ const CommunitySection = ({ children }) => (
       GraphQL Conf family, the events are run by local partners, with community
       support from Prisma and Honeypot.
     </p>
-    <img
-      src={organizers}
-      alt="Honeypot, Prisma and GraphCMS are organizing the Bodensee GraphQL day"
-    />
+    <Row className="group">
+      <Column lg={3} md={12} className="col">
+        <img src={honeypot} alt="honeypot at graphql day bodensee" />
+      </Column>
+      <Column lg={1} md={12} className="col">
+        <img src={x} alt="collaboration symbol" />
+      </Column>
+      <Column lg={4} md={12} className="col">
+        <img src={gcms} alt="graphcms at graphql day bodensee" />
+      </Column>
+      <Column lg={1} md={12} className="col">
+        <img src={x} alt="collaboration symbol" />
+      </Column>
+      <Column lg={3} md={12} className="col">
+        <img src={prisma} alt="prisma at graphql day bodensee" />
+      </Column>
+    </Row>
   </Wrapper>
 )
 
