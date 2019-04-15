@@ -33,6 +33,12 @@ const NavLinks = styled.div`
     text-decoration: none;
     color: #000000;
     margin-right: 2em;
+    display: inline-block;
+
+    @media (max-width: 520px) {
+      font-size: 1em;
+      margin-right: 0.5em;
+    }
   }
 `
 
@@ -52,6 +58,10 @@ const Logo = styled(Link)`
   h3 {
     display: inline-block;
     margin-left: 0.5em;
+
+    @media (max-width: 520px) {
+      font-size: 1em;
+    }
   }
 `
 
@@ -61,7 +71,7 @@ const Header = ({ children }) => (
     <Nav>
       <Logo to="/" alt="GraphQL Conf Bodensee Page">
         <img src={logo} alt="GraphQL Conf Bodensee Logo" className="logo" />
-        <h3>GraphQL Day Bodensee</h3>
+        <h3>GraphQL Day</h3>
       </Logo>
       <NavLinks align="right">
         <Link to="/#upcoming-events" alt="" className="navLink">

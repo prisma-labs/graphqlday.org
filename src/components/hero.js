@@ -67,6 +67,11 @@ const Wrapper = styled.section`
     color: white;
     border: none;
     margin-right: 16px;
+
+    @media (max-width: 435px) {
+      margin-right: 0;
+      margin-bottom: 16px;
+    }
   }
 
   .light {
@@ -89,6 +94,15 @@ const Wrapper = styled.section`
     justify-content: center;
     margin: 0 auto;
   }
+
+  .announcement {
+    text-transform: uppercase;
+    text-align: left;
+    max-width: 850px;
+    margin: 0 auto 8px auto;
+    color: #9c9c9c;
+    font-weight: 600;
+  }
 `
 
 const Hero = ({ children }) => (
@@ -97,6 +111,7 @@ const Hero = ({ children }) => (
     <h2>We Think you Should Join our Global GraphQL Day Community!</h2>
 
     <div className="cardWrapper">
+      <p className="announcement">Next event</p>
       <Row className="card">
         <Column lg={6} md={12} className="left">
           <img src={germany} alt="germany graphql conference" />
@@ -110,6 +125,7 @@ const Hero = ({ children }) => (
           <a
             href="https://www.eventbrite.com/e/graphql-conf-2019-tickets-47172725893"
             alt="Get Ticket for GraphQL day Bodensee"
+            disabled
           >
             <button className="dark">Get tickets</button>
           </a>
