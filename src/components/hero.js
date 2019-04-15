@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { Link } from "gatsby"
 
 import germany from "../pages/static/logo-germany.svg"
 import headerImages from "../pages/static/header-pictures@2x.png"
@@ -98,12 +99,15 @@ const Hero = ({ children }) => (
         </div>
       </div>
       <div className="buttons">
-        <a href="" alt="Get Ticket for GraphQL day Bodensee">
+        <a
+          href="https://www.eventbrite.com/e/graphql-conf-2019-tickets-47172725893"
+          alt="Get Ticket for GraphQL day Bodensee"
+        >
           <button className="dark">Get tickets</button>
         </a>
-        <a href="" alt="More information about GraphQL day Bodensee">
+        <Link to="/bodensee" alt="More information about GraphQL day Bodensee">
           <button className="light">More info</button>
-        </a>
+        </Link>
       </div>
     </div>
 

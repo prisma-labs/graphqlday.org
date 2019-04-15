@@ -1,11 +1,10 @@
 import React from "react"
 import styled from "styled-components"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 
 import logo from "../pages/static/logo-graphql.svg"
 import organizers from "../pages/static/organizers-logo-vertical.svg"
 import twitter from "../pages/static/twitter.png"
-import github from "../pages/static/github.png"
 import mail from "../pages/static/mail.png"
 
 const Footer = styled.footer`
@@ -114,37 +113,31 @@ const Form = styled.form`
 const FooterSection = ({ children }) => (
   <Footer>
     <LinkSection>
-      <img src={logo} alt="GraphQL Day Bodensee logo" />
+      <Link to="/" alt="GraphQL Day Bodensee Sponsored by GraphCMS">
+        <img src={logo} alt="GraphQL Day Bodensee logo" />
+      </Link>
       <div className="links">
         <div>
-          <a href="" alt="">
+          <Link
+            to="/bodensee#attend"
+            alt="Tickets to attend GraphQL Day Bodensee Conference"
+          >
             Attend
-          </a>
+          </Link>
 
-          <a href="" alt="">
+          <Link
+            to="/bodensee#speakers"
+            alt="Speakers for the GraphQL Day Bodensee Conference"
+          >
             Speakers
-          </a>
+          </Link>
 
-          <a href="" alt="">
+          <Link
+            to="/sponsors"
+            alt="Sponsorship offerings for the GraphQL Day Bodensee Conference"
+          >
             Sponsors
-          </a>
-
-          <a href="" alt="">
-            Team
-          </a>
-        </div>
-        <div>
-          <a href="" alt="">
-            API
-          </a>
-
-          <a href="" alt="">
-            Code of Conduct
-          </a>
-
-          <a href="" alt="">
-            Imprint
-          </a>
+          </Link>
         </div>
         <div>
           <a
@@ -161,6 +154,13 @@ const FooterSection = ({ children }) => (
             <img src={mail} alt="Mail icon" className="icon" />
             Contact Us!
           </a>
+
+          <Link
+            to="/conduct"
+            alt="Code of Conduct for the GraphQL Day Bodensee Conference"
+          >
+            Code of Conduct
+          </Link>
         </div>
       </div>
       <img
