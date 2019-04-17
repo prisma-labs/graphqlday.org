@@ -71,6 +71,15 @@ const Wrapper = styled.section`
     transform: translate(0px, -5px);
   }
 
+  button:disabled {
+    background: lightgray;
+
+    :hover {
+      transform: none;
+      box-shadow: none;
+    }
+  }
+
   .dark {
     background: #db3f74;
     color: white;
@@ -136,7 +145,9 @@ export default ({ children }) => (
             alt="Get Ticket for GraphQL day Bodensee"
             disabled
           >
-            <button className="dark">Get tickets</button>
+            <button className="dark" disabled>
+              Get tickets
+            </button>
           </a>
           <Link
             to="/bodensee"

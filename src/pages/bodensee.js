@@ -59,6 +59,15 @@ const Hero = styled.section`
     transform: translate(0px, -5px);
   }
 
+  button:disabled {
+    background: lightgray;
+
+    :hover {
+      transform: none;
+      box-shadow: none;
+    }
+  }
+
   .dark {
     background: #db3f74;
     color: white;
@@ -93,13 +102,9 @@ const BodenseePage = () => (
                 forward-thinking local developers and technical leaders.
               </p>
               <div className="buttons">
-                <a
-                  href="https://www.eventbrite.com/e/graphql-conf-2019-tickets-47172725893"
-                  alt="Get Ticket for GraphQL day Bodensee"
-                  disabled
-                >
-                  <button className="dark">Get tickets</button>
-                </a>
+                <button className="dark" disabled>
+                  Get tickets
+                </button>
                 <Link
                   to="/sponsor"
                   alt="More information about sponsoring GraphQL day Bodensee"
