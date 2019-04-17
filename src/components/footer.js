@@ -1,28 +1,31 @@
 import React from "react"
 import styled from "styled-components"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
+import { Row, Column } from "hedron"
 
 import logo from "../pages/static/logo-graphql.svg"
-import organizers from "../pages/static/organizers-logo-vertical.svg"
 import twitter from "../pages/static/twitter.png"
-import github from "../pages/static/github.png"
 import mail from "../pages/static/mail.png"
+
+import honeypot from "../pages/static/Honeypot.svg"
+import gcms from "../pages/static/gcms.svg"
+import prisma from "../pages/static/prisma.svg"
+import x from "../pages/static/xMark.svg"
 
 const Footer = styled.footer`
   border-top: 1px solid #f1f1f1;
 `
 
-const LinkSection = styled.div`
+const LinkSection = styled(Row)`
   padding: 24px 80px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 
   .links {
-    max-width: 500px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 48px;
+    max-width: 250px;
+    margin: 0 auto;
+    text-align: center;
   }
 
   a {
@@ -35,6 +38,30 @@ const LinkSection = styled.div`
 
   .icon {
     padding-right: 8px;
+  }
+
+  .col {
+    display: flex;
+    margin: 0 auto;
+    padding: 8px;
+    height: 25px;
+    transition: all 0.5s;
+
+    :hover {
+      transform: translate(0px, -3px);
+    }
+  }
+
+  .x {
+    height: 8px;
+    display: flex;
+    margin: 0 auto;
+    padding: 8px;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
   }
 `
 
@@ -56,14 +83,9 @@ const PinkFooter = styled.div`
 
   .content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    max-width: 830px;
-  }
-
-  .text {
-    display: block;
+    max-width: 850px;
   }
 
   h3 {
@@ -96,6 +118,12 @@ const Form = styled.form`
     font-size: 16px;
   }
 
+  @media (max-width: 480px) {
+    input {
+      width: 200px;
+    }
+  }
+
   input::placeholder {
     color: rgba(255, 255, 255, 0.6);
   }
@@ -114,72 +142,95 @@ const Form = styled.form`
 const FooterSection = ({ children }) => (
   <Footer>
     <LinkSection>
-      <img src={logo} alt="GraphQL Day Bodensee logo" />
-      <div className="links">
-        <div>
-          <a href="" alt="">
-            Attend
-          </a>
+      <Column lg={2} md={12} className="logo">
+        <Link to="/" alt="GraphQL Day Bodensee Sponsored by GraphCMS">
+          <img src={logo} alt="GraphQL Day Bodensee logo" />
+        </Link>
+      </Column>
+      <Column lg={4} sm={12} className="links">
+        <Link
+          to="/bodensee#attend"
+          alt="Tickets to attend GraphQL Day Bodensee Conference"
+        >
+          Attend
+        </Link>
 
-          <a href="" alt="">
-            Speakers
-          </a>
+        <Link
+          to="/bodensee#speakers"
+          alt="Speakers for the GraphQL Day Bodensee Conference"
+        >
+          Speakers
+        </Link>
 
-          <a href="" alt="">
-            Sponsors
-          </a>
+        <Link
+          to="/sponsors"
+          alt="Sponsorship offerings for the GraphQL Day Bodensee Conference"
+        >
+          Sponsors
+        </Link>
+      </Column>
 
-          <a href="" alt="">
-            Team
-          </a>
-        </div>
-        <div>
-          <a href="" alt="">
-            API
-          </a>
-
-          <a href="" alt="">
-            Code of Conduct
-          </a>
-
-          <a href="" alt="">
-            Imprint
-          </a>
-        </div>
-        <div>
-          <a href="" alt="">
-            <img src={twitter} alt="Twitter icon" className="icon" />
-            Twitter
-          </a>
-
-          <a href="" alt="">
-            <img src={github} alt="Github icon" className="icon" />
-            Github
-          </a>
-
-          <a href="" alt="">
-            <img src={mail} alt="Mail icon" className="icon" />
-            Contact Us!
-          </a>
-        </div>
-      </div>
-      <img
-        src={organizers}
-        alt="Honeypot, Prisma, and GraphCMS are the organizers of GraphQL Day Bodensee"
-      />
+      <Column lg={4} md={12} className="links">
+        <a
+          href="https://twitter.com/graphcms"
+          alt="GraphCMS Twitter"
+          target="blank"
+          rel=""
+        >
+          <img src={twitter} alt="Twitter icon" className="icon" />
+          Twitter
+        </a>
+        <a href="mailto:hello@graphcms.com" alt="GraphCMS email">
+          <img src={mail} alt="Mail icon" className="icon" />
+          Contact Us!
+        </a>
+        <Link
+          to="/conduct"
+          alt="Code of Conduct for the GraphQL Day Bodensee Conference"
+        >
+          Code of Conduct
+        </Link>
+      </Column>
+      <Column lg={2} md={12}>
+        <a href="https://www.honeypot.io" alt="Honeypot's website">
+          <img
+            src={honeypot}
+            alt="honeypot at graphql day bodensee"
+            className="col"
+          />
+        </a>
+        <img src={x} alt="collaboration symbol" className="x" />
+        <a href="https://graphcms.com/" alt="GraphCMS's Website">
+          <img
+            src={gcms}
+            alt="graphcms at graphql day bodensee"
+            className="col"
+          />
+        </a>
+        <img src={x} alt="collaboration symbol" className="x" />
+        <a href="https://www.prisma.io" alt="Prisma's website">
+          <img
+            src={prisma}
+            alt="prisma at graphql day bodensee"
+            className="col"
+          />
+        </a>
+      </Column>
     </LinkSection>
     <PinkFooter>
       <div className="topper" />
-      <div className="content">
-        <div className="text">
-          <h3>Don’t want to miss out? </h3>
+      <Row className="content">
+        <Column lg={5} sm={12} className="column">
+          <h3>Don’t want to miss out?</h3>
           <p>Sign up for our newsletter</p>
-        </div>
-        <Form>
-          <input type="email" placeholder="Add your email" />
-          <button type="submit">Sign up</button>
-        </Form>
-      </div>
+        </Column>
+        <Column lg={7} sm={12} className="column">
+          <Form>
+            <input type="email" placeholder="Add your email" />
+            <button type="submit">Sign up</button>
+          </Form>
+        </Column>
+      </Row>
     </PinkFooter>
   </Footer>
 )

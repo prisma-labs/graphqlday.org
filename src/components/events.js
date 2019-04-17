@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 
 import FutureCard from "./futurecard"
 import PastCard from "./pastcard"
@@ -31,6 +31,10 @@ const Wrapper = styled.section`
     color: #9c9c9c;
     padding-top: 2em;
   }
+
+  a {
+    text-decoration: none;
+  }
 `
 
 const EventSection = ({ children }) => (
@@ -38,32 +42,55 @@ const EventSection = ({ children }) => (
     <h2 className="pink" id="upcoming-events">
       Upcoming events
     </h2>
-    <FutureCard
-      image={berlin}
-      altText="GraphQL Conf Logo"
-      confTitle="GraphQL Conf Berlin"
-      confDate="20th-21st June, 2019"
-    />
-    <FutureCard
-      image={germany}
-      altText="Germany GraphQL Day Logo"
-      confTitle="GraphQL Day Bodensee"
-      confDate="6th September, 2019"
-    />
+    <a
+      href="https://www.graphqlconf.org"
+      alt="GraphQL conference main website"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FutureCard
+        image={berlin}
+        altText="GraphQL Conf Logo"
+        confTitle="GraphQL Conf Berlin"
+        confDate="20th-21st June, 2019"
+      />
+    </a>
+    <Link to="/bodensee" alt="GraphQL day bodensee">
+      <FutureCard
+        image={germany}
+        altText="Germany GraphQL Day Logo"
+        confTitle="GraphQL Day Bodensee"
+        confDate="6th September, 2019"
+      />
+    </Link>
 
     <h2 className="gray">Past events</h2>
-    <PastCard
-      image={canada}
-      altText="Toronto GraphQL Day Logo"
-      confTitle="GraphQL Day Toronto"
-      confDate="28th February, 2019"
-    />
-    <PastCard
-      image={holland}
-      altText="Amsterdamn GraphQL Day Logo"
-      confTitle="GraphQL Day Amsterdamn"
-      confDate="14th April, 2018"
-    />
+    <a
+      href="https://www.graphqlday.org"
+      alt="GraphQL Day Toronto Page"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <PastCard
+        image={canada}
+        altText="Toronto GraphQL Day Logo"
+        confTitle="GraphQL Day Toronto"
+        confDate="28th February, 2019"
+      />
+    </a>
+    <a
+      href="https://www.graphqlday.org"
+      alt="GraphQL Day Amsterdamn Page"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <PastCard
+        image={holland}
+        altText="Amsterdamn GraphQL Day Logo"
+        confTitle="GraphQL Day Amsterdamn"
+        confDate="14th April, 2018"
+      />
+    </a>
   </Wrapper>
 )
 

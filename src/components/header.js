@@ -5,13 +5,14 @@ import styled from "styled-components"
 import topBar from "../pages/static/pink-topbar.svg"
 import logo from "../pages/static/logo-graphql.svg"
 
-const TopBar = styled.img`
+const TopBar = styled.div`
   top: 0;
   right: 0;
   left: 0;
-  display: block;
-  width: 100%;
   margin: 0;
+  height: 13px;
+  background: url(${topBar}) no-repeat center center;
+  background-size: cover;
 `
 
 const Nav = styled.header`
@@ -19,6 +20,10 @@ const Nav = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 670px) {
+    padding: 16px 32px;
+  }
 `
 
 const NavLinks = styled.div`
@@ -28,6 +33,12 @@ const NavLinks = styled.div`
     text-decoration: none;
     color: #000000;
     margin-right: 2em;
+    display: inline-block;
+
+    @media (max-width: 520px) {
+      font-size: 1em;
+      margin-right: 0.5em;
+    }
   }
 `
 
@@ -47,16 +58,20 @@ const Logo = styled(Link)`
   h3 {
     display: inline-block;
     margin-left: 0.5em;
+
+    @media (max-width: 520px) {
+      font-size: 1em;
+    }
   }
 `
 
 const Header = ({ children }) => (
   <>
-    <TopBar src={topBar} alt="" />
+    <TopBar />
     <Nav>
       <Logo to="/" alt="GraphQL Conf Bodensee Page">
         <img src={logo} alt="GraphQL Conf Bodensee Logo" className="logo" />
-        <h3>GraphQL Day Bodensee</h3>
+        <h3>GraphQL Day</h3>
       </Logo>
       <NavLinks align="right">
         <Link to="/#upcoming-events" alt="" className="navLink">
