@@ -1,10 +1,13 @@
 import React from "react"
 import styled from "styled-components"
-import { Link } from "gatsby"
+import { Link /*StaticQuery, graphql*/ } from "gatsby"
 import { Row, Column } from "hedron"
+// import Img from "gatsby-image"
 
 import germany from "../pages/static/logo-germany.svg"
 import headerImages from "../pages/static/header-pictures@2x.png"
+
+// const propPic = obj => obj.childImageSharp.fluid
 
 const Wrapper = styled.section`
   text-align: center;
@@ -27,7 +30,7 @@ const Wrapper = styled.section`
   }
 
   .images {
-    background: url(${headerImages});
+    content: url(${headerImages});
     background-size: cover;
     height: 400px;
     margin-bottom: 144px;
@@ -111,7 +114,7 @@ const Wrapper = styled.section`
   }
 `
 
-const Hero = ({ children }) => (
+export default ({ children }) => (
   <Wrapper>
     <h1>Hello!</h1>
     <h2>We Think you Should Join our Global GraphQL Day Community!</h2>
@@ -144,9 +147,7 @@ const Hero = ({ children }) => (
         </Column>
       </Row>
     </div>
-
     <div className="images" />
+    {/* <Img fluid={propPic(data.heroImage)} className="images" /> */}
   </Wrapper>
 )
-
-export default Hero

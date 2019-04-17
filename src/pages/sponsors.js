@@ -74,7 +74,7 @@ const Sponsors = styled.div`
 const SponsorsPage = () => (
   <Sponsors>
     <SEO title="Sponsors Page | GraphQL Day Bodensee" />
-    <img src={logo} height="175px" className="bigLogo" />
+    <img src={logo} alt="GraphQL Day Logo" height="175px" className="bigLogo" />
     <h1>GraphQL Day Bodensee</h1>
     <h2>Sponsorship 2019</h2>
     <div className="sponsors" />

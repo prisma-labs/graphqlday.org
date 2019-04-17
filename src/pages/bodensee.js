@@ -4,6 +4,8 @@ import Layout from "../components/layout"
 import { Row, Column } from "hedron"
 import { Link } from "gatsby"
 
+import Speakers from "../components/speakers"
+
 import bodensee from "./static/bodensee.png"
 
 const BG = styled.div`
@@ -117,6 +119,7 @@ const BodenseePage = () => (
         </Row>
       </Hero>
     </BG>
+    <Speakers />
   </Layout>
 )
 
