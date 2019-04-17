@@ -106,7 +106,7 @@ const BodenseePage = () => (
                   Get tickets
                 </button>
                 <Link
-                  to="/sponsor"
+                  to="/sponsors"
                   alt="More information about sponsoring GraphQL day Bodensee"
                 >
                   <button className="light">Become a Sponsor</button>
