@@ -87,7 +87,7 @@ const HeroImg = styled.div`
 	position: relative;
 
 	img {
-		border-radius: 10px;
+		border-radius: 5px;
 		height: 350px;
 		width: 350px;
 	}
@@ -98,7 +98,7 @@ const HeroImg = styled.div`
 		height: 250px;
 		flex: 0 0 auto;
 		background: url(https://media.graphcms.com/wqJU9NoQjGzhBAZj2Xwx);
-		border-radius: 0 10px 10px 0;
+		border-radius: 0 5px 5px 0;
 	}
 `;
 
