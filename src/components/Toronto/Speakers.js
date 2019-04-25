@@ -24,8 +24,10 @@ const SpeakerSection = styled.section`
 
 const SpeakerCard = styled.div`
 	.headshot {
-		background-image: url(${props => props.background}) no-repeat white;
+		background-image: url("${props => props.headshot.url}");
+		background-color: white;
 		background-size: cover;
+		background-repeat: no-repeat;
 		border-radius: 5px;
 		box-shadow: 0 16px 32px 0 rgba(62, 57, 107, 0.18), 0 0 0 transparent;
 		margin-bottom: 16px;
@@ -95,7 +97,7 @@ export default (props, data) => (
 				<Row>
 					{data.gcms.speakers.map(speaker => (
 						<Column lg={4} md={6} sm={12}>
-							<SpeakerCard>
+							<SpeakerCard headshot={speaker.headshot}>
 								<div
 									background={speaker.headshot.url}
 									alt="speaker's headshot"
