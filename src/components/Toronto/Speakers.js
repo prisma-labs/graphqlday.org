@@ -24,10 +24,13 @@ const SpeakerSection = styled.section`
 
 const SpeakerCard = styled.div`
 	.headshot {
-		background: white;
+		background-image: url(${props => props.background}) no-repeat white;
+		background-size: cover;
 		border-radius: 5px;
 		box-shadow: 0 16px 32px 0 rgba(62, 57, 107, 0.18), 0 0 0 transparent;
 		margin-bottom: 16px;
+		height: 350px;
+		width: 350px;
 	}
 
 	.name {
@@ -69,7 +72,7 @@ const SpeakerCard = styled.div`
 	}
 `;
 
-export default () => (
+export default (props, data) => (
 	<StaticQuery
 		query={graphql`
 			query {
@@ -93,10 +96,8 @@ export default () => (
 					{data.gcms.speakers.map(speaker => (
 						<Column lg={4} md={6} sm={12}>
 							<SpeakerCard>
-								<img
-									src={speaker.headshot.url}
-									height="350px"
-									width="350px"
+								<div
+									background={speaker.headshot.url}
 									alt="speaker's headshot"
 									className="headshot"
 								/>

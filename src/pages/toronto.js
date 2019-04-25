@@ -6,6 +6,7 @@ import Layout from '../components/layout';
 
 import TorontoSchedule from '../components/Toronto/schedule';
 import TorontoSpeakers from '../components/Toronto/Speakers';
+import TorontoSponsors from '../components/Toronto/sponsors';
 import Hero from '../components/Toronto/Hero';
 
 const PageWrapper = styled.div`
@@ -18,6 +19,7 @@ const TorontoPage = () => (
 			<Hero />
 			<TorontoSpeakers />
 			<TorontoSchedule />
+			<TorontoSponsors />
 		</PageWrapper>
 	</Layout>
 );
