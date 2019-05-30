@@ -6,7 +6,7 @@ import Layout from '../components/layout';
 
 import TorontoSchedule from '../components/Toronto/schedule';
 import TorontoSpeakers from '../components/Toronto/Speakers';
-import TorontoSponsors from '../components/Toronto/sponsors';
+import TorontoSponsors from '../components/Toronto/Sponsors';
 import Hero from '../components/Toronto/Hero';
 
 const PageWrapper = styled.div`
