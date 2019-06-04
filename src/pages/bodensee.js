@@ -4,7 +4,7 @@ import Layout from '../components/layout';
 import { Row, Column } from 'hedron';
 import { Link } from 'gatsby';
 
-import Speakers from '../components/speakers';
+import Speakers from '../components/Bodensee/speakers';
 
 import bodensee from './static/bodensee.png';
 

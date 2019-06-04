@@ -79,7 +79,7 @@ export default (props, data) => (
 		query={graphql`
 			query {
 				gcms {
-					torontoSpeakers {
+					bodenseeSpeakers {
 						headshot {
 							url
 						}
@@ -95,7 +95,7 @@ export default (props, data) => (
 			<SpeakerSection>
 				<h2>Speakers</h2>
 				<Row>
-					{data.gcms.torontoSpeakers.map(speaker => (
+					{data.gcms.bodenseeSpeakers.map(speaker => (
 						<Column lg={4} md={6} sm={12}>
 							<SpeakerCard headshot={speaker.headshot}>
 								<div
