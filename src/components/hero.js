@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link /*StaticQuery, graphql*/ } from 'gatsby';
+import { Link, StaticQuery, graphql } from 'gatsby';
 import { Row, Column } from 'hedron';
-// import Img from "gatsby-image"
+import Img from 'gatsby-image';
 
 import germany from '../pages/static/logo-germany.svg';
 import headerImages from '../pages/static/header-pictures@2x.png';
 
-// const propPic = obj => obj.childImageSharp.fluid
+const propPic = obj => obj.childImageSharp.fluid;
 
 const Wrapper = styled.section`
 	text-align: center;
@@ -33,11 +33,15 @@ const Wrapper = styled.section`
 		content: url(${headerImages});
 		background-size: cover;
 		height: 400px;
-		margin-bottom: 144px;
+		margin: 0 auto 144px auto;
+		z-index: 0;
+		position: absolute;
 	}
 
 	.cardWrapper {
 		padding: 0 16px;
+		z-index: 99;
+		position: relative;
 	}
 
 	.card {
@@ -124,42 +128,54 @@ const Wrapper = styled.section`
 `;
 
 export default ({ children }) => (
-	<Wrapper>
-		<h1>Hello!</h1>
-		<h2>We Think you Should Join our Global GraphQL Day Community!</h2>
+	<StaticQuery
+		query={graphql`
+			{
+				heroImages: file(relativePath: { regex: "/header-pictures@2x.png/" }) {
+					childImageSharp {
+						fluid(quality: 100) {
+							...GatsbyImageSharpFluid
+						}
+					}
+				}
+			}
+		`}
+		render={data => (
+			<Wrapper>
+				<h1>Hello!</h1>
+				<h2>We Think you Should Join our Global GraphQL Day Community!</h2>
 
-		<div className="cardWrapper">
-			<p className="announcement">Next event</p>
-			<Row className="card">
-				<Column lg={6} md={12} className="left">
-					<img src={germany} alt="germany graphql conference" />
-					<div className="textGroup">
-						<h3>GraphQL Day Bodensee</h3>
-						<p>6th September, 2019</p>
-					</div>
-				</Column>
+				<div className="cardWrapper">
+					<p className="announcement">Next event</p>
+					<Row className="card">
+						<Column lg={6} md={12} className="left">
+							<img src={germany} alt="germany graphql conference" />
+							<div className="textGroup">
+								<h3>GraphQL Day Bodensee</h3>
+								<p>6th September, 2019</p>
+							</div>
+						</Column>
 
-				<Column lg={6} md={12} className="buttons">
-					<a
-						href="https://www.eventbrite.ie/e/graphql-day-bodensee-tickets-60886463050"
-						alt="Get Ticket for GraphQL day Bodensee"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<button className="dark" disabled>
-							Get tickets
-						</button>
-					</a>
-					<Link
-						to="/bodensee"
-						alt="More information about GraphQL day Bodensee"
-					>
-						<button className="light">More info</button>
-					</Link>
-				</Column>
-			</Row>
-		</div>
-		<div className="images" />
-		{/* <Img fluid={propPic(data.heroImage)} className="images" /> */}
-	</Wrapper>
+						<Column lg={6} md={12} className="buttons">
+							<a
+								href="https://www.eventbrite.ie/e/graphql-day-bodensee-tickets-60886463050"
+								alt="Get Ticket for GraphQL day Bodensee"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<button className="dark">Get tickets</button>
+							</a>
+							<Link
+								to="/bodensee"
+								alt="More information about GraphQL day Bodensee"
+							>
+								<button className="light">More info</button>
+							</Link>
+						</Column>
+					</Row>
+				</div>
+				<Img fluid={propPic(data.heroImages)} className="images" />
+			</Wrapper>
+		)}
+	/>
 );
