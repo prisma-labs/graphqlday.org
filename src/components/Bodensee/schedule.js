@@ -90,7 +90,7 @@ export default ({ data }) => (
 		query={graphql`
 			query {
 				gcms {
-					beforeNoon: torontoSchedules(first: 8, orderBy: createdAt_ASC) {
+					beforeNoon: bodenseeSchedules(first: 8, orderBy: createdAt_ASC) {
 						time
 						icon {
 							url
@@ -98,7 +98,7 @@ export default ({ data }) => (
 						item
 						subitem
 					}
-					afterNoon: torontoSchedules(last: 8, orderBy: createdAt_ASC) {
+					afterNoon: bodenseeSchedules(last: 8, orderBy: createdAt_ASC) {
 						time
 						icon {
 							url
