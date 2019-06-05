@@ -32,10 +32,9 @@ const Wrapper = styled.section`
 	.images {
 		content: url(${headerImages});
 		background-size: cover;
-		height: 400px;
 		margin: 0 auto 144px auto;
-		z-index: 0;
 		position: absolute;
+		max-width: 100%;
 	}
 
 	.cardWrapper {
@@ -133,7 +132,7 @@ export default ({ children }) => (
 			{
 				heroImages: file(relativePath: { regex: "/header-pictures@2x.png/" }) {
 					childImageSharp {
-						fluid(quality: 100) {
+						fluid(maxHeight: 400, quality: 100) {
 							...GatsbyImageSharpFluid
 						}
 					}

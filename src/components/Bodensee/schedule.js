@@ -114,7 +114,7 @@ export default ({ data }) => (
 				<Title>
 					<h2>SCHEDULE</h2>
 					<p className="subtitle">
-						Optional GraphQL Training 9 AM - 4 PM Tuesday and Wednesday
+						Optional GraphQL Workshop, Thursday Sept 5th. More details soon.
 					</p>
 				</Title>
 				<ScheduleRow>

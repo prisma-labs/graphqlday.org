@@ -89,6 +89,10 @@ const Hero = styled.section`
 	}
 `;
 
+const PageWrapper = styled.div`
+	padding: 64px 32px;
+`;
+
 const BodenseePage = () => (
 	<Layout>
 		<BG>
@@ -130,8 +134,10 @@ const BodenseePage = () => (
 				</Row>
 			</Hero>
 		</BG>
-		<Speakers />
-		<Schedule />
+		<PageWrapper>
+			<Speakers />
+			<Schedule />
+		</PageWrapper>
 	</Layout>
 );
 
