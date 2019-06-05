@@ -24,7 +24,7 @@ const SpeakerSection = styled.section`
 
 const SpeakerCard = styled.div`
 	.headshot {
-		background-image: url("${props => props.headshot.url}");
+		background-image: url("${props => props.headshot}");
 		background-color: white;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -97,7 +97,7 @@ export default (props, data) => (
 				<Row>
 					{data.gcms.bodenseeSpeakers.map(speaker => (
 						<Column lg={4} md={6} sm={12}>
-							<SpeakerCard headshot={speaker.headshot}>
+							<SpeakerCard headshot={speaker.headshot.url}>
 								<div
 									background={speaker.headshot.url}
 									alt="speaker's headshot"
@@ -126,19 +126,6 @@ export default (props, data) => (
 							</SpeakerCard>
 						</Column>
 					))}
-					<Column lg={3} md={6} sm={12} className="column">
-						<SpeakerCard>
-							<div>
-								<h3 className="question">Want to speak?</h3>
-								<a
-									href="https://www.papercall.io/graphql-day-bodensee"
-									alt="Call for papers"
-								>
-									<button>Submit an Idea</button>
-								</a>
-							</div>
-						</SpeakerCard>
-					</Column>
 				</Row>
 			</SpeakerSection>
 		)}

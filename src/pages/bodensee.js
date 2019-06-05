@@ -5,6 +5,7 @@ import { Row, Column } from 'hedron';
 import { Link } from 'gatsby';
 
 import Speakers from '../components/Bodensee/speakers';
+import Schedule from '../components/Bodensee/schedule';
 
 import bodensee from './static/bodensee.png';
 
@@ -103,9 +104,13 @@ const BodenseePage = () => (
 								forward-thinking local developers and technical leaders.
 							</p>
 							<div className="buttons">
-								<button className="dark" disabled>
-									Get tickets
-								</button>
+								<a
+									href="https://www.eventbrite.ie/e/graphql-day-bodensee-tickets-60886463050"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<button className="dark">Get tickets</button>
+								</a>
 								<Link
 									to="/sponsors"
 									alt="More information about sponsoring GraphQL day Bodensee"
@@ -126,6 +131,7 @@ const BodenseePage = () => (
 			</Hero>
 		</BG>
 		<Speakers />
+		<Schedule />
 	</Layout>
 );
 
