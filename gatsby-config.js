@@ -17,6 +17,13 @@ module.exports = {
 					'https://api-euwest.graphcms.com/v1/cjubekk561n9a01gh4sievp2i/master'
 			}
 		},
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				name: `src`,
+				path: `${__dirname}/src/`
+			}
+		},
 		`gatsby-plugin-react-helmet`,
 		{
 			resolve: `gatsby-source-filesystem`,
