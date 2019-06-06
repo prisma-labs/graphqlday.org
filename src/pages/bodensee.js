@@ -6,6 +6,7 @@ import { Link } from 'gatsby';
 
 import Speakers from '../components/Bodensee/speakers';
 import Schedule from '../components/Bodensee/schedule';
+import BodenseeSponsors from '../components/Bodensee/sponsors';
 
 import bodensee from './static/bodensee.png';
 
@@ -137,6 +138,7 @@ const BodenseePage = () => (
 		<PageWrapper>
 			<Speakers />
 			<Schedule />
+			<BodenseeSponsors />
 		</PageWrapper>
 	</Layout>
 );

@@ -23,6 +23,8 @@ const SpeakerSection = styled.section`
 `;
 
 const SpeakerCard = styled.div`
+	width: 350px;
+	
 	.headshot {
 		background-image: url("${props => props.headshot}");
 		background-color: white;
@@ -44,6 +46,7 @@ const SpeakerCard = styled.div`
 		letter-spacing: 0.5px;
 		padding-bottom: 16px;
 		display: inline-block;
+		
 	}
 
 	.position {

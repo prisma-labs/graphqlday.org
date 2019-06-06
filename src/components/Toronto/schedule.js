@@ -57,7 +57,7 @@ const Card = styled.div`
 	img {
 		margin: 0 20px;
 		height: 45px;
-		width: 45px;
+		/* width: 45px; */
 		clip-path: circle(50% at 50% 50%);
 	}
 
