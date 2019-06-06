@@ -32,7 +32,8 @@ const Section = styled.section`
 export default () => (
   <StaticQuery
     query={graphql`
-      fragment Image on GraphCMS_Sponsor {
+      fragment Data on GraphCMS_Sponsor {
+		url
         logo {
           url
         }
@@ -41,16 +42,16 @@ export default () => (
       {
         gcms {
           graphcms: sponsor(where: { id: "cjwkoabnzbfk70910uivr7vv5" }) {
-            ...Image
+            ...Data
           }
           appsync: sponsor(where: { id: "cjwko0z8kb1y10941qkjv5e2o" }) {
-            ...Image
+            ...Data
           }
           honeypot: sponsor(where: { id: "cjuvfq9gpe7uh0c15pf4zkzzw" }) {
-            ...Image
+            ...Data
           }
           prisma: sponsor(where: { id: "cjuvfqtbee8ga0c15nx7youyo" }) {
-            ...Image
+            ...Data
           }
         }
       }
@@ -59,11 +60,11 @@ export default () => (
       <Section>
 		<section>
 	  	<h2>Organized by</h2>
-		<img src={data.gcms.graphcms.logo.url} alt="OKgrow logo" />
+		<img src={data.gcms.graphcms.logo.url} alt="GraphCMS logo" />
 		</section>
 		<section>
         <h2>Gold Sponsors</h2>
-		<img src={data.gcms.appsync.logo.url} alt="AWS App-Sync logo" />
+		<a href={data.gcms.appsync.url}><img src={data.gcms.appsync.logo.url} alt="AWS App-Sync logo" /></a>
 		</section>
 		<section>
         <h2>Community Sponsors</h2>
