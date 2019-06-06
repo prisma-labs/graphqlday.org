@@ -73,7 +73,7 @@ const EventSection = ({ children }) => (
 				confDate="28th February, 2019"
 			/>
 		</Link>
-		<a
+		{false && (<a
 			href="https://www.graphqlday.org"
 			alt="GraphQL Day Amsterdamn Page"
 			target="_blank"
@@ -85,7 +85,7 @@ const EventSection = ({ children }) => (
 				confTitle="GraphQL Day Amsterdamn"
 				confDate="14th April, 2018"
 			/>
-		</a>
+		</a>)}
 	</Wrapper>
 );
 
